@@ -1,0 +1,2891 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#312e81" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="icon" type="image/jpeg" href="data:image/jpeg;base64,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" />
+  <link rel="apple-touch-icon" href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCADAAMADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD5UoopRX1xghQaO9IKcBTRQhpeacEJqRYie1WhkWKUdanWA+lOFu3pVWYyvRVn7OaPs5pqLGitQAatCA+lL5B9KpJlFWlqz9nPpR5B9DTSY7lc0lWvIPpS+QfSqsxlSlqyYD6UhgPpTsxkFFSGI0xlIosUmNopcUlNFodRQKK0QypSikpVrzTz0OUVNHGTRCmTWtpdg9zKEQADGWZjhVUdST6CtYxuMq29qzkKqkknAAGSa2I9DkjwbyaCzz/DK3z/APfIyfzqc3UdqDFpuV4w1wRiR/p/dH059aqryST1PU+tehTwt9ZBzFldP0sddSkJ/wBm1OP1NPGn6V/0EJ//AAF/+yqutSL0rpWGpgmycadpR/5iE/8A4C//AGVPGl6Uf+YjP/4C/wD2VQrUq9K0WFplJjxpWlH/AJiU3/gJ/wDZU4aRpX/QSm/8BP8A7KkWnjpWiwdMtCf2Ppf/AEE5v/AT/wCypRoul/8AQSm/8BP/ALKnipFqlg6RSIv7E0v/AKCc3/gJ/wDZUv8AYemf9BOb/wABP/sqmAp3erWCpFqKK/8AYemf9BOb/wABP/sqRtB05uF1Vgf9u1OP0Jq1jNBwKf1GkaKCMq48MXJBazkgvQO0LfP/AN8nB/LNYVxaNGzIyFWU4IIwRXYZ5BHboakuDb6gnlalksBhLkDMifX+8vsefSuargGleDuN0+xwEkZFQkYre1jTZbK4aGUA8ZVlOVdT0YHuDWPMmDXmyjYlEIpD1paQ0FFWnxjJplTwDJFeetzz0XbOLJrcu2FpbLp8fDnDXJ9T1C/Qfz+lVdAjX7UjyDKRgyMPZRn+lRvI8sjSucu7Fifc16OGh1G9ESIeKkWoVNSKa7kySYGpEqFakU1qmNEy09aiU1IprVMtEy1ItRKa9M8LeC/C2neD7Txd8RtWvbKx1En+zrKxAE0yAkeYzENgEg4ABJAzwKyxWMpYSHPUe+itq2+yRcU3sedinqa9G8WeCPDF34Kl8afD3V7u/wBNtJPLv7W8wZbfPcMAucZGQQDjkE815uDV4PG0sXDnpvbRp6NPs0XZrclHSnL0qMGnBsV2o0iPPApp9aQtSZNVc0QtNagmmMaLmiJWjGoWLWLDMqZe2bvnqyfQ/wA/rXH3ceCa6tJGikWRDh0IZT7isrxRCialMYxiOTEqj0DDP9a8rHU0nzrqRNdTmpBg0ypZxg1FXnEorVZtuSKrVatfvCuCO556Og0wbbO7Ydrdv1IFVBVyw/5B95/17n+YrPVua9Ki/dGydTUimoFNSDpXSmSTqakU1ApqVTWqY0TKalBqBTUimtYstEhPHFams+IvEHiaz0XRr6QXMOmRC0sIoovmIOFUcfePQD/69ZSBnZURWdmIVVUZJJ4AA9a+lfhZ8ANY0LxDoPijW9dsIJ7K4ju5NOW3eRlIGQhfIAYHGcAgEd687M8ThsPFVK1uZXcfWxrFPY4y9tovhP8ACzWfDmrXcNx4j8SlRLZQuGWzRUZQrHu/zsWxwMBck15NE2RXvvxR+AOs6lq+r+KNP8S2V5PMxlSxkgkR8ADCK+SM8HGQBk14AgZCVZSrKcFWGCCOoPvWHD9WnVhKop805O8vLTb5Fy3JwacDUINKGr6RMaJSaM8UzdSbqdzVDyaaxpu6mk0uYtAxqv4kAK2jdzapn8CRUrNUevnMVmf+nZf5tXHjNYCnsctcj5jUFWLr71V68ghFarVr1FVatWvUVwx3OBG/Zn/iXXn/AFwP8xWcprQtuNOu/wDrif5issHmvQp7AywpqRTUCNUitW6ZJOp5qUGq4atDQ9M1PWtSh03SNPur+9mOI4LeIu7fgO3v0Fac6irvYtEamrulWF/quoxadplncXt5McRwW8ZeRz7Ac17n4B/ZuvW8u+8e6qNOhGGOnWLrJOfZ5PuR/huNekav4x+F/wAH9Jex0yGy02Zl5t7VfMu7j/fb77fViBXiYviKhSl7OgueXl/X5G8KUnr0Ob+BfwTm8OalB4p8cLCL+3xJY6YGDiF+0szDjcOoUZweSeMV3vjv4seDvCLbdW1aMzMeIojvc/gOTXzH8R/j34q8VmSy0ZTotjz91g07D1J6L+GfrXlTRyzzPNcSSTTOcvJIxZmPuTya8l5Zjczq+1xT5V2W9vyX4mnNCGi1Pu7wZ8T/AAd4zVk0bVopJQPmgk+SQfVTzXCfEv4Jw+IvEQ1rw/fxWJuXLahA0Zbce8kQGMse6kjJ5B6ivk6OOW3nS4t5ZIZozlJI2Ksp9QRyK98+H3xS1/w/8MB4g1559ajj1X7CVYhZBHsQg7sfMfmPXr61z1sBjcomquFnfm06X1/B/gaQcZ6PQwviL8NpPDPh638SaZqkmp6TJcmznM9o1tcWs4/gkjbkA9j/AIg15/ur6z0Txh4R+LHgLWLIB9QtojbvdWU5aOWL5jtORyORwQSOPwrzDxd8D3ZWuvBOp/a16/2ffOqTD2SThH+h2n617uUcSQcfY41uM11at9+2vySFKDWq2PG91JuqfV9O1DR7+XT9WsrixvIuHhnjKOv4Ht79Kpbq+ujNSV09BIl3UjNUZamlqOYtDycmk1zmCz/69x/M1GXp+snNtaf9e4/ma5MU7wCWxzdz941WqxdHk1XryyStVq1+8Kq1ZtfvCuGO556N6E4026/64n+YrKBrTQ40y6/65H+YrHBrti7DZOpqVTVYGpFNaxYrFgOFUsewzX2d4LstG+DPwoiupbSSXVLi2jn1GW3hMk9xK4BES452LuCgDjOSe5r4pc5UjsRXc23xm+JVrDawwa8qm2iEUcpgUyFQMct1PAxXjZ5h8TioRhRel9dbX/M6KEoRd5Hoep/EX4t/EbxJbeGvDml3nh23vpfLSV7d0ZVwSWeUrhAACTtGewJrvNA/ZX8P24N94n8TapqtwfnmEKiJWPfJO52/MGr/AOyT4n8b+N7bWNZ8Vau95Y28iW1qmzaDIBvdvfAKD8TXudzOVLYrwXUnhm6VNKFt7a/i9TST5nfc5bTPh/4DtdCu4NE0mxjDQvGTFEAQSp4PGfzryWx/Zl8PT2sU/wDwlN4vmIH2qEwuRnH3e3SvcrrUVMPykKGBBHoehrzDT9TliuJ7bzmwshI56A/5NeVSx9fCtulNpvfz++5vyua1MFv2ZfD8X70eJb2YoQwjITD/AOz93v0r0vx54Y+HyaMll4hjtYoH/dpG6k+Yyj+FR1I9ulJ4PmkuNYhLOzCPMhyfQZq7461iLStEM8iJLcSyLFbRsM7pD3/AZOfapq46tjXzVZNuO3l6bA/3XU85074Q6N4e8I+JIfDOpX1u/iLTorUfaX3iBt4KuCAG6t65rx3S/GHxM8C63caLrmmXuvQ20nltIsDuWHZklC4cYI+9z7ivePFXj3T7LTJ4JGxdRIJDuOF+V1Le+B3NeVfFHxP44mtrLVPCV/dW6pEReWcUhOTwVkQZGeMggc8A16tCosROVOolJu3xadO55izXC3gue3Ne3Z2Z1PjG1tPiH8P4rm4t5orn7O0unvcRFJoJBn92c8hSRtK9OQR2NfMiyb1DDgEZrYvPiX47v4ZYLzW3lWRdpdky6j2bORWBCcKB7V9dw/hcRhKUqdZ6X01vY9FyT2LBb3ppaoy1IWr6G4IkLVLqpza2n/XAfzNVS1WNRObO1P8A0xH8zXNiHeISOfuupqvVi6+8ar15wkVqtWv3hVWrNr94Vwx3PPRt5xpdz/1z/qKxs81rucaVcf7n9RWJmuvYciZSKkDVXBqRTVKQkTZBpDtUFj0AzTFNdp8FPDP/AAl/xQ0PRXQvbG4Fxdf9cYvnbP1wF/4FTq1I04Ob2RotWfanwJ8Nr4L+EWj6fKgS5Nv9puvXzpPnb8shf+A10EV4brTUux0kB/QkU/xfdiz0V0yAzLjA9TWToEm7wnGf7ssij8GIr4Fzc5876s6uXQxtfvHgEjITtbk+xrz5LnGrOwP32YH88/8As1d9eos8jRsMhuDXmuv28mj629tLn5nSSNv7yEEZ/MAV5mOpOm+boddC0tD1T4eNlb26/uRrGPqx/wAFNcJ4i8QnxJ4ruNRt2LabpAaGzP8ADJL/AByf4ey+9T6jrs+l/Dd7TTmJ1PXL020GOscaIA7/AIbiB7n2q5YeGo9P8By20SfvI4vM9yR1/TNLA03yOo9rnn5zGU6E4Qetn+R57rtlZalKkt2Z9yAqTFKULqfvK3qD3pbmOZ7G4vx5cVvBjcxbaB6BfoBRD9kulMTX6xXhY7YnXAK+ufX6DjFYfjTVUub6Lw7Zvu06wIe4fGPOlPOD+hI9lHY16fMr2W5+YUqE5wXtG+RbfPseVeL7dLbxLeCNcRyMJlHs3J/XNZm4V0vxDiXNpep1y0L/APoS/wDs1cruPrX6Lltf2uGhLy/I/R8sre2wsJeVvu0JC1Jv9KjJ96Qn3ru5j0ESbqu3pzZWv/XEfzNZu6tC5OdPtv8ArkP5msazugkYd1941Xqxc/eNVxXCJFarNr94VWqzadRXDHc89GvMcaTP/uf1rDDVs3J/4lM/+7/WsHNdEnqNk6tzzT1NVw1ODdKaYIsBq+ov2F/C5Z9b8Yzx/KxXT7ZiOww8pH4+WPwNfLG4kcAk9gO59K/RD4LeHB4K+E+j6PIoS4htg9z7zP8APJ/48xH4V5WdYjkoezW8jakru4fEK9827itg3G7J+gp/gqTz/AcEuc72d/zdq5HxdqYF1eXbthIY2OT2rovhnOJ/hVo9wvSazjlH/Ahu/rXzNT3Ul2OxL3RIxm8x71jfGjTok8JW2rqg8+2uUjz6o55H5gGt2zTdd596x/j5crb/AA/ggJ5mvYlH4ZNGLSnSaYUW1UVjnfBukmeXT9Qum35t8wqeiKzsfzJyT+FelyRp9hdCPlKkH6VxXgORZvD2jzA5xbGM/VXcV2E83+jkZ7U6UF7GCXYmprOVz5n8XKsWs3lq2P3Uxxg8g/0rnlnhizFESzMxJxliWPUk11XxttI4rXVr9VAkG1i68EAHnn6V0fhXwvZa34SsLyVAZYogmR3HarnB03G/U+Yhw5dyvPTojyv4h6Frth4PtdZu7WJNPubtYg3mhnDYJBIHABwR1zXnm7NfVmseG/7d+G2teF2GZhCZrTPaVPmT9Rj8a+Tlfjpg9we1faZPKMaPIuh7mEw0MNTVOGxLupN3NRlqTdXr8x1Jkm6tSQ50+2/65/1NY2a1mOdNt/8Arn/U1nN3Q2ZFz1quKnufvVAK5GCK1WLU/MKr1PbHkVwx3PORp3R/4lM3+7WFnNbdyc6VMB/drByOxrab1KkPBpwNRilBpJiRZtXcXkBjmEL+am2Q9EO4YY/Tr+FffOs+KTpfw003V/7dt9aeeMecYmQ7m74ZOAfYj8q/P1jkYqzpGr6ro0hbTL+e2DffRTlH+qn5T+Irxs2wVTFOMqcrcp00asYaNH0X8Y/HVhY+DtQsTM8Oq31tmCEj5trjGeOBgE9698+G8X2b4XaHbYx5enW6Y+kS1+fviXW9T8RXrahq1ws1x5Xl7lQKAAOOBX3vonijwzYeGbO2uNe02LbBGFBuUyQEUcc14+Lw9SjRgp/E97HRCanJ22NzT4P328jvXlX7QuuRXuuaZ4et5A/2MGa4wejtwo+uP51p+L/ipbWFs9t4ciiu7hhgXEkyLGnuAWya8j05Hlvpb/Ur2GS4mcvI73KEknqT81efXq+7yo2pws+ZnqvwpvVOlyaa7Ylt5TLGD3R8Zx9GH612t5PiIjPavHtM1GzsriO5h1G1jlToROn+NdbH4y0qSEfab+0VyOqzoQf1rXB4hcvs56NbE1ab+JHHfF2ATeHdYDDO63f+Rqn8BPH+nP4WtdIldp9SCCNoAMYPQMSeACB1rW8TX2jalp+oo+pWhR7WTaRMvXafevl/w9rOp6DeLf6XMsM/lhdzIGGOD0PfNe68JLE0Hybq1jGMlGWp9bWety/8JXPZ6xqMGg2r20vl3SzKNkm07SzMMYB7d6+SnZxNIGlWRt7bnByHOTlh7HrRrWtazrtx52salc3rZyBI3yj6KOB+VQJwMV62UYWth03VldsblF/CifcfWkzUYNLmvbuIfmtgH/iW2/8Auf1NYma2AcadAD/cFJvQGZlz96q9TXB+aoa5mNFbNSwHBFRGnIcGuFHnI2IMS27xH+JSK59l2sVbgqcGtiylwRzVbW7fZJ9pjHyP972NbS1VymUPoaUGowadnP1qEyUx+aMU0Glp7ljqiMKk5Kj8qkzTqUoKW5SIRCn9xfyFL5Cf3F/IVMKXihUYjIfIX+4v5CjyE/uL+QqcHnpS1fsYlJEKQqDnaPyqcCgHFLW1OEYmiHAAU78ajBpc1si0PzRk03NGaq4x6Au4RQSWOBW3fEJGIx0VQv5VT0iDn7U4+VfuZ7n1pb2XcTQ3ZAylKctTPalY5NJWI0Vs0tNorgPOJ4XIOa0oJEkjMcgBUjBFZAOKmilK1rCdikJf6a8RMkILxe3UVQHH1Fb1vdEd6fJFZ3HMkQDeo4quRPYOU5/NOBrZ/sqzbpLIKcNItO88lNU5DSMUGlBra/si0/57SUo0i0/57SU1TkUkYop2a2f7ItP+e0lL/ZVoP+W0lWqcijFB5pTmtkaVa/8APWSl/sq0/wCeslWoSKRjA8c0oIrY/sq0/wCeslKNLtP+esn51SiykYw604Vr/wBl2n/PWT86X+zrNeryH8arlZaZjjk4rRstPZ/3lxlI/wC73ariC1t+Yolz6nrUVxdZ707pbjuSXUyquxMKoGABWZM+5qJZSx61ETms3K4IKWkpaRSKtFFLiuA85AOlKDigDijFMoer4qVJSO9QYoqrjLa3B9aeLk+tUuaUZqlJlIufaT6077SfWqPNLzVKTGi79qNH2o+tUhmimpMou/avel+0n1qjzS5NUpMEXTcn1o+0n1qlmjJquZlovfaT601rg+tVATS80cw0TNKT3qNmJplFO5SFpKKKBi0tJg0tUUj/2Q==" />
+  <title>حسابدار هوشمند بوتیک - نسخه موبایل اندروید</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Vazirmatn', system-ui, -apple-system, sans-serif;
+      background: linear-gradient(180deg, #e2e8f0 0%, #f1f5f9 100%);
+      color: #0f172a;
+      -webkit-tap-highlight-color: transparent;
+      user-select: none;
+    }
+    input, textarea, select {
+      user-select: text;
+    }
+    .ltr-input {
+      direction: ltr;
+      text-align: left;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .tap-btn {
+      transition: transform 0.12s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s ease;
+    }
+    .tap-btn:active:not(:disabled) {
+      transform: scale(0.96);
+    }
+    /* قاب موبایلی طبیعی روی دسکتاپ و تمام‌صفحه روی گوشی */
+    .mobile-shell {
+      max-width: 430px;
+      margin: 0 auto;
+      min-height: 100vh;
+      background-color: #f8fafc;
+      box-shadow: 0 0 40px rgba(15, 23, 42, 0.12);
+      position: relative;
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+  <div class="mobile-shell pb-28">
+    <!-- نوار وضعیت هوشمند ساعت و تاریخ (Status Bar موبایل) -->
+    <div class="bg-indigo-950 text-indigo-100 px-4 py-1.5 flex items-center justify-between text-[11px] font-bold">
+      <div class="flex items-center gap-1.5">
+        <span id="timeSyncDot" class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span id="liveClockDisplay" class="font-mono tracking-wider text-white">00:00:00</span>
+        <span class="text-indigo-400">|</span>
+        <span id="timeSyncStatusText" class="text-[10px] text-emerald-300">همگام با ساعت رسمی</span>
+      </div>
+      <div class="flex items-center gap-1">
+        <span>🛡️</span>
+        <span id="vaultHealthBadge" class="text-[10px] text-indigo-200">امنیت فعال</span>
+      </div>
+    </div>
+
+    <!-- هدر اصلی اپ موبایل -->
+    <header class="bg-gradient-to-l from-indigo-900 via-indigo-800 to-violet-900 text-white sticky top-0 z-20 shadow-md rounded-b-3xl">
+      <div class="px-4 py-3.5 flex items-center justify-between gap-2">
+        <div class="flex items-center gap-2.5 min-w-0">
+          <div class="w-11 h-11 rounded-2xl bg-white/15 border border-white/30 overflow-hidden shadow-md shrink-0">
+            <img src="data:image/jpeg;base64,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" alt="آیکون برنامه" class="w-full h-full object-cover" />
+          </div>
+          <div class="min-w-0">
+            <h1 class="text-sm font-black tracking-tight text-white truncate">حسابدار هوشمند بوتیک</h1>
+            <p id="headerJalaliDate" class="text-[11px] font-semibold text-indigo-200 truncate mt-0.5">امروز: در حال دریافت تاریخ...</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-1.5 shrink-0">
+          <button
+            id="togglePrivacyBtn"
+            type="button"
+            title="مخفی/نمایش سود و قیمت خرید"
+            class="tap-btn bg-white/15 hover:bg-white/25 border border-white/20 text-white text-[11px] px-2.5 py-2 rounded-2xl font-bold flex items-center gap-1"
+          >
+            <span id="privacyIcon">👁️</span>
+            <span id="privacyText">سود آشکار</span>
+          </button>
+
+          <button
+            id="goTodayHeaderBtn"
+            type="button"
+            class="tap-btn bg-emerald-500/25 hover:bg-emerald-500/35 border border-emerald-300/30 text-emerald-100 text-[11px] px-2.5 py-2 rounded-2xl font-bold"
+          >
+            📅 روز جاری
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="px-3.5 pt-3.5 space-y-3.5">
+      <!-- بنر اعلان و پیام‌ها (Toast موبایلی) -->
+      <div id="statusBanner" class="hidden rounded-2xl px-4 py-3 text-xs font-bold transition-all shadow-sm"></div>
+
+      <!-- هشدار دستکاری یا عقب افتادن ساعت گوشی -->
+      <div id="clockTamperAlert" class="hidden rounded-2xl bg-rose-600 text-white px-4 py-3 text-xs font-bold shadow-sm">
+        ⚠️ هشدار امنیتی زمان: ساعت یا تاریخ گوشی شما عقب‌تر از آخرین فاکتور ثبت‌شده است! لطفاً ساعت گوشی را روی حالت خودکار (Automatic) بگذارید.
+      </div>
+
+      <!-- کارت خلاصه آمار روز (با طراحی UX موبایلی) -->
+      <section id="topStatsCard" class="bg-white rounded-3xl p-4 shadow-xs border border-slate-200/90">
+        <div class="flex items-center justify-between mb-3">
+          <div class="flex items-center gap-1.5">
+            <span class="w-2.5 h-2.5 rounded-full bg-indigo-600"></span>
+            <span class="text-xs font-bold text-slate-500">حساب تاریخ:</span>
+            <span id="selectedDateBadge" class="text-xs font-black text-indigo-700 bg-indigo-50 border border-indigo-100 px-2.5 py-1 rounded-xl"></span>
+          </div>
+          <span id="totalStockBadgeTop" class="text-[11px] font-bold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-xl">
+            موجودی: <strong id="totalStockCount" class="text-slate-900 font-black">0</strong>
+          </span>
+        </div>
+
+        <div class="grid grid-cols-3 gap-2 text-center">
+          <div class="bg-gradient-to-b from-emerald-50 to-white border border-emerald-200/70 rounded-2xl p-2.5">
+            <p class="text-[10px] font-bold text-emerald-800">فروش خالص</p>
+            <p class="text-sm font-black text-emerald-700 mt-1">
+              <span id="todaySalesAmount">0</span>
+            </p>
+            <p class="text-[10px] text-slate-400 mt-0.5"><span id="todaySalesCount">0</span> عدد</p>
+          </div>
+
+          <div class="bg-gradient-to-b from-indigo-50 to-white border border-indigo-200/70 rounded-2xl p-2.5">
+            <p class="text-[10px] font-bold text-indigo-800">سود خالص</p>
+            <p class="text-sm font-black text-indigo-700 mt-1">
+              <span id="todayProfitAmount">0</span>
+            </p>
+            <p class="text-[10px] text-slate-400 mt-0.5">تومان</p>
+          </div>
+
+          <div class="bg-gradient-to-b from-amber-50 to-white border border-amber-200/70 rounded-2xl p-2.5">
+            <p class="text-[10px] font-bold text-amber-800">تخفیف / هزینه</p>
+            <p class="text-sm font-black text-amber-700 mt-1">
+              <span id="todayDiscountAmount">0</span>
+            </p>
+            <p class="text-[10px] text-slate-400 mt-0.5">هزینه: <span id="todayExpenseAmount">0</span></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================== -->
+      <!-- تب ۱: فروش محصول (UX موبایلی با دکمه‌های بزرگ و دسترس‌پذیر) -->
+      <!-- ========================================================== -->
+      <div id="pageSales" class="space-y-3.5">
+        <div class="bg-slate-200/80 p-1 rounded-2xl grid grid-cols-2 gap-1">
+          <button
+            id="subTabPosListBtn"
+            type="button"
+            class="tap-btn py-2.5 px-3 rounded-xl text-xs font-black bg-white text-indigo-700 shadow-2xs flex items-center justify-center gap-1.5"
+          >
+            <span>🛒</span>
+            <span>ویترین فروش کالا</span>
+          </button>
+          <button
+            id="subTabDailyLogBtn"
+            type="button"
+            class="tap-btn py-2.5 px-3 rounded-xl text-xs font-bold text-slate-600 hover:text-slate-900 flex items-center justify-center gap-1.5"
+          >
+            <span>🧾</span>
+            <span>فاکتورها و هزینه‌ها (<span id="salesLogCountBadge">0</span>)</span>
+          </button>
+        </div>
+
+        <!-- زیربخش ۱-الف: ویترین انتخاب لباس -->
+        <section id="salesPosSubView" class="bg-white rounded-3xl p-4 shadow-xs border border-slate-200/90 space-y-3.5">
+          <div class="flex items-center justify-between">
+            <h2 class="text-sm font-black text-slate-800">انتخاب سریع لباس</h2>
+            <span id="itemTypesBadge" class="text-[11px] font-bold bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full">
+              ۰ مدل کالا
+            </span>
+          </div>
+
+          <div class="relative">
+            <input
+              id="salesSearchInput"
+              type="text"
+              placeholder="🔍 جستجو با نام، کد اتیکت (101) یا سایز (XL)..."
+              class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-xs font-semibold focus:bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
+            />
+          </div>
+
+          <div id="categoryFilterBar" class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1 text-xs">
+            <button type="button" data-cat="all" class="tap-btn px-3.5 py-2 rounded-xl font-bold bg-indigo-600 text-white shrink-0">همه</button>
+            <button type="button" data-cat="سویشرت و هودی" class="tap-btn px-3.5 py-2 rounded-xl font-medium bg-slate-100 text-slate-600 shrink-0">سویشرت و هودی</button>
+            <button type="button" data-cat="تیشرت و پیراهن" class="tap-btn px-3.5 py-2 rounded-xl font-medium bg-slate-100 text-slate-600 shrink-0">تیشرت و پیراهن</button>
+            <button type="button" data-cat="شلوار و جین" class="tap-btn px-3.5 py-2 rounded-xl font-medium bg-slate-100 text-slate-600 shrink-0">شلوار و جین</button>
+            <button type="button" data-cat="مانتو و کاپشن" class="tap-btn px-3.5 py-2 rounded-xl font-medium bg-slate-100 text-slate-600 shrink-0">مانتو و کاپشن</button>
+          </div>
+
+          <div id="salesProductList" class="space-y-3 pt-1"></div>
+        </section>
+
+        <!-- زیربخش ۱-ب: فاکتورهای امروز و ثبت هزینه‌های جانبی -->
+        <div id="salesInvoicesSubView" class="hidden space-y-3.5">
+          <section class="bg-white rounded-3xl p-4 shadow-xs border border-slate-200/90">
+            <div class="flex items-center justify-between mb-3.5">
+              <div>
+                <h3 class="text-sm font-black text-slate-800">🧾 فاکتورهای ثبت‌شده</h3>
+                <p class="text-[11px] text-slate-400 mt-0.5">با ساعت دقیق ثبت از ساعت رسمی گوشی</p>
+              </div>
+              <button
+                id="resetTodayBtn"
+                type="button"
+                class="tap-btn text-[11px] text-amber-800 bg-amber-50 hover:bg-amber-100 border border-amber-200 rounded-xl py-1.5 px-3 font-bold"
+              >
+                صفر کردن فروش امروز
+              </button>
+            </div>
+
+            <div id="dailySalesLogList" class="space-y-2.5"></div>
+          </section>
+
+          <section class="bg-white rounded-3xl p-4 shadow-xs border border-slate-200/90 space-y-3">
+            <div>
+              <h3 class="text-sm font-black text-slate-800">💸 ثبت هزینه جاری مغازه</h3>
+              <p class="text-[11px] text-slate-400 mt-0.5">کرایه بار، پیک، ناهار یا بسته‌بندی</p>
+            </div>
+            <form id="addExpenseForm" class="grid grid-cols-12 gap-2">
+              <input
+                id="expenseTitleInput"
+                type="text"
+                required
+                placeholder="عنوان (مثلاً: پیک موتور)"
+                class="col-span-6 rounded-2xl border border-slate-200 bg-slate-50 px-3 py-2.5 text-xs font-semibold focus:bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              />
+              <input
+                id="expenseAmountInput"
+                type="text"
+                inputmode="numeric"
+                required
+                placeholder="50,000"
+                class="ltr-input col-span-4 rounded-2xl border border-slate-200 bg-slate-50 px-3 py-2.5 text-xs font-extrabold focus:bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              />
+              <button
+                type="submit"
+                class="tap-btn col-span-2 bg-rose-600 hover:bg-rose-700 text-white rounded-2xl text-xs font-bold py-2.5"
+              >
+                ثبت
+              </button>
+            </form>
+            <div id="dailyExpensesList" class="space-y-2 pt-1"></div>
+          </section>
+        </div>
+      </div>
+
+      <!-- ========================================================== -->
+      <!-- تب ۲: افزودن کالای جدید (فرم ۳ مرحله‌ای موبایلی)           -->
+      <!-- ========================================================== -->
+      <div id="pageAddProduct" class="hidden space-y-3.5">
+        <div class="bg-white rounded-3xl p-4 shadow-xs border border-slate-200/90 flex items-center justify-between">
+          <div>
+            <h2 id="inventoryFormHeading" class="text-sm font-black text-slate-900 flex items-center gap-1.5">
+              <span>➕</span>
+              <span>تعریف لباس جدید برای مغازه</span>
+            </h2>
+            <p class="text-[11px] text-slate-500 mt-0.5">فرم هوشمند با محاسبه خودکار سایزها و کد کالا</p>
+          </div>
+          <button
+            id="cancelEditProductBtn"
+            type="button"
+            class="tap-btn hidden text-xs bg-rose-50 text-rose-600 border border-rose-200 px-3 py-1.5 rounded-xl font-bold"
+          >
+            لغو ویرایش ✕
+          </button>
+        </div>
+
+        <form id="addProductForm" class="space-y-3.5">
+          <input id="editingProductId" type="hidden" value="" />
+
+          <!-- گام ۱: نام، دسته و قیمت -->
+          <section class="bg-white rounded-3xl p-4 shadow-xs border border-slate-200/90 space-y-3.5">
+            <div class="flex items-center gap-2 border-b border-slate-100 pb-2.5">
+              <span class="w-6 h-6 rounded-full bg-indigo-600 text-white font-black text-xs flex items-center justify-center">۱</span>
+              <h3 class="text-xs font-black text-slate-800">نام، دسته‌بندی و قیمت (تومان)</h3>
+            </div>
+
+            <div class="grid grid-cols-12 gap-2.5">
+              <div class="col-span-8">
+                <label for="productName" class="block text-xs font-bold text-slate-600 mb-1">نام و مدل لباس</label>
+                <input
+                  id="productName"
+                  type="text"
+                  required
+                  placeholder="مثلاً: سویشرت کلاه‌دار پشمی"
+                  class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-3.5 py-2.5 text-xs font-bold focus:bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                />
+              </div>
+              <div class="col-span-4">
+                <label for="productSkuInput" class="block text-xs font-bold text-slate-600 mb-1">کد اتیکت</label>
+                <input
+                  id="productSkuInput"
+                  type="text"
+                  placeholder="خودکار"
+                  class="ltr-input w-full rounded-2xl border border-slate-200 bg-slate-50 px-2.5 py-2.5 text-xs font-bold text-center focus:bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                />
+              </div>
+            </div>
+
+            <div>
+              <div class="flex items-center justify-between mb-1.5">
+                <label for="productCategory" class="text-xs font-bold text-slate-600">دسته‌بندی محصول</label>
+                <button
+                  id="toggleCategoryManagerBtn"
+                  type="button"
+                  class="tap-btn text-[11px] font-bold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-xl"
+                >
+                  ⚙️ ویرایش / افزودن دسته‌بندی
+                </button>
+              </div>
+              <select
+                id="productCategory"
+                class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-3.5 py-2.5 text-xs font-bold focus:bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              >
+                <option value="سویشرت و هودی">سویشرت و هودی</option>
+                <option value="تیشرت و پیراهن">تیشرت و پیراهن</option>
+                <option value="شلوار و جین">شلوار و جین</option>
+                <option value="مانتو و کاپشن">مانتو و کاپشن</option>
+                <option value="سایر">سایر</option>
+              </select>
+
+              <div id="categoryManagerPanel" class="hidden mt-3 p-3.5 rounded-2xl bg-indigo-50/60 border border-indigo-200 space-y-2.5">
+                <p class="text-[11px] font-bold text-indigo-950">مدیریت دسته‌بندی‌ها:</p>
+                <div class="flex gap-2">
+                  <input
+                    id="newCategoryNameInput"
+                    type="text"
+                    placeholder="نام دسته جدید..."
+                    class="flex-1 rounded-xl border border-slate-300 px-3 py-2 text-xs bg-white"
+                  />
+                  <button
+                    id="addCategoryBtn"
+                    type="button"
+                    class="tap-btn bg-indigo-600 text-white text-xs font-bold px-3.5 py-2 rounded-xl shrink-0"
+                  >
+                    + افزودن
+                  </button>
+                </div>
+                <div id="editableCategoryList" class="space-y-1.5 max-h-40 overflow-y-auto"></div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3 pt-1">
+              <div>
+                <label for="productBuyPrice" class="block text-xs font-bold text-slate-600 mb-1">
+                  قیمت خرید (تومان)
+                </label>
+                <input
+                  id="productBuyPrice"
+                  type="text"
+                  inputmode="numeric"
+                  placeholder="550,000"
+                  class="ltr-input w-full rounded-2xl border border-slate-200 bg-slate-50 px-3.5 py-2.5 text-sm font-black text-slate-700 focus:bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                />
+              </div>
+
+              <div>
+                <label for="productPrice" class="block text-xs font-bold text-slate-600 mb-1">
+                  قیمت فروش (تومان)
+                </label>
+                <input
+                  id="productPrice"
+                  type="text"
+                  inputmode="numeric"
+                  required
+                  placeholder="850,000"
+                  class="ltr-input w-full rounded-2xl border border-indigo-300 bg-indigo-50/30 px-3.5 py-2.5 text-sm font-black text-indigo-700 focus:bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                />
+              </div>
+            </div>
+          </section>
+
+          <!-- گام ۲: سایزبندی و تعداد -->
+          <section class="bg-white rounded-3xl p-4 shadow-xs border border-slate-200/90 space-y-3.5">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-2.5">
+              <div class="flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-indigo-600 text-white font-black text-xs flex items-center justify-center">۲</span>
+                <h3 class="text-xs font-black text-slate-800">سایزبندی و تعداد هر سایز</h3>
+              </div>
+              <span class="text-xs bg-indigo-50 text-indigo-700 px-2.5 py-1 rounded-xl font-black">
+                جمع: <span id="sizeSumBadge">0</span> عدد
+              </span>
+            </div>
+
+            <div id="sizePresetButtons" class="grid grid-cols-2 gap-1.5 text-[11px]">
+              <button type="button" data-size-preset="alpha" class="tap-btn py-2 px-2 rounded-xl bg-slate-100 hover:bg-indigo-50 font-bold text-slate-700">
+                حروفی (M, L, XL, 2XL)
+              </button>
+              <button type="button" data-size-preset="numeric" class="tap-btn py-2 px-2 rounded-xl bg-slate-100 hover:bg-indigo-50 font-bold text-slate-700">
+                عددی (38, 40, 42, 44)
+              </button>
+              <button type="button" data-size-preset="shoes" class="tap-btn py-2 px-2 rounded-xl bg-slate-100 hover:bg-indigo-50 font-bold text-slate-700">
+                سایز کفش (39..43)
+              </button>
+              <button type="button" data-size-preset="free" class="tap-btn py-2 px-2 rounded-xl bg-slate-100 hover:bg-indigo-50 font-bold text-slate-700">
+                تک‌سایز (Free)
+              </button>
+            </div>
+
+            <div id="sizeBuilderRows" class="grid grid-cols-2 gap-2"></div>
+
+            <div class="flex items-center gap-2 pt-1">
+              <input
+                id="customSizeLabelInput"
+                type="text"
+                placeholder="سایز دلخواه (مثلاً 3XL یا 46)..."
+                class="flex-1 rounded-2xl border border-slate-200 bg-slate-50 px-3.5 py-2 text-xs focus:bg-white"
+              />
+              <button
+                id="addCustomSizeRowBtn"
+                type="button"
+                class="tap-btn bg-slate-800 text-white text-xs font-bold px-3.5 py-2 rounded-2xl shrink-0"
+              >
+                + افزودن سایز
+              </button>
+            </div>
+
+            <div class="pt-2 border-t border-slate-100 flex items-center justify-between">
+              <label for="productQty" class="text-xs font-bold text-slate-600">تعداد کل موجودی این لباس:</label>
+              <input
+                id="productQty"
+                type="number"
+                min="0"
+                step="1"
+                required
+                value="4"
+                class="w-24 rounded-2xl border border-slate-200 bg-slate-50 px-3 py-1.5 text-center text-sm font-black text-indigo-700"
+              />
+            </div>
+          </section>
+
+          <!-- گام ۳: عکس محصول -->
+          <section class="bg-white rounded-3xl p-4 shadow-xs border border-slate-200/90 space-y-3">
+            <div class="flex items-center gap-2 border-b border-slate-100 pb-2.5">
+              <span class="w-6 h-6 rounded-full bg-indigo-600 text-white font-black text-xs flex items-center justify-center">۳</span>
+              <h3 class="text-xs font-black text-slate-800">عکس یا آیکون لباس</h3>
+            </div>
+
+            <div class="flex items-center gap-3.5">
+              <div
+                id="productPhotoPreviewBox"
+                class="w-16 h-16 rounded-2xl bg-indigo-50 border-2 border-dashed border-indigo-200 flex items-center justify-center overflow-hidden shrink-0 text-3xl"
+              >
+                🧥
+              </div>
+              <div class="flex-1 space-y-2">
+                <div class="flex flex-wrap items-center gap-2">
+                  <label
+                    for="productImageInput"
+                    class="tap-btn cursor-pointer bg-indigo-50 hover:bg-indigo-100 text-indigo-700 border border-indigo-200 text-xs font-bold px-3 py-2 rounded-2xl inline-block"
+                  >
+                    📷 انتخاب عکس از گوشی / دوربین
+                  </label>
+                  <input id="productImageInput" type="file" accept="image/*" class="hidden" />
+                  <button
+                    id="clearProductImageBtn"
+                    type="button"
+                    class="tap-btn text-xs text-slate-500 hover:text-rose-600 px-2.5 py-1.5 rounded-xl bg-slate-100"
+                  >
+                    حذف عکس
+                  </button>
+                </div>
+                <div id="presetIconBar" class="flex items-center gap-1.5 overflow-x-auto no-scrollbar">
+                  <button type="button" data-icon="🧥" class="tap-btn w-8 h-8 rounded-xl bg-slate-100 text-base">🧥</button>
+                  <button type="button" data-icon="👕" class="tap-btn w-8 h-8 rounded-xl bg-slate-100 text-base">👕</button>
+                  <button type="button" data-icon="👖" class="tap-btn w-8 h-8 rounded-xl bg-slate-100 text-base">👖</button>
+                  <button type="button" data-icon="👔" class="tap-btn w-8 h-8 rounded-xl bg-slate-100 text-base">👔</button>
+                  <button type="button" data-icon="👗" class="tap-btn w-8 h-8 rounded-xl bg-slate-100 text-base">👗</button>
+                  <button type="button" data-icon="👟" class="tap-btn w-8 h-8 rounded-xl bg-slate-100 text-base">👟</button>
+                  <button type="button" data-icon="🧢" class="tap-btn w-8 h-8 rounded-xl bg-slate-100 text-base">🧢</button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <button
+            id="submitProductFormBtn"
+            type="submit"
+            class="tap-btn w-full bg-indigo-600 hover:bg-indigo-700 text-white font-black text-sm py-4 rounded-2xl shadow-md"
+          >
+            ثبت کالا در انبار
+          </button>
+        </form>
+      </div>
+
+      <!-- ========================================================== -->
+      <!-- تب ۳: موجودی انبار                                         -->
+      <!-- ========================================================== -->
+      <div id="pageInventory" class="hidden space-y-3.5">
+        <section class="bg-gradient-to-l from-indigo-800 to-violet-800 text-white rounded-3xl p-4 shadow-sm">
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="text-xs text-indigo-200">ارزش کل موجودی مغازه (به قیمت فروش)</p>
+              <p class="text-lg font-black mt-1">
+                <span id="totalInventoryValue">0</span> <span class="text-xs font-normal">تومان</span>
+              </p>
+            </div>
+            <button
+              id="jumpToAddProductBtn"
+              type="button"
+              class="tap-btn bg-white text-indigo-900 font-black text-xs px-3.5 py-2.5 rounded-2xl shadow-xs"
+            >
+              + کالای جدید
+            </button>
+          </div>
+          <p id="lowStockAlertText" class="text-xs text-amber-200 mt-2.5 font-semibold"></p>
+        </section>
+
+        <section class="bg-white rounded-3xl p-4 shadow-xs border border-slate-200/90">
+          <button
+            id="toggleBulkPriceAccordionBtn"
+            type="button"
+            class="w-full flex items-center justify-between text-xs font-black text-slate-700"
+          >
+            <span class="flex items-center gap-2">
+              <span>📈</span>
+              <span>تغییر گروهی قیمت‌ها (حراج یا افزایش درصدی)</span>
+            </span>
+            <span id="bulkAccordionArrow" class="text-slate-400">▼</span>
+          </button>
+
+          <div id="bulkPriceCollapsibleBody" class="hidden mt-3.5 pt-3 border-t border-slate-100">
+            <div class="grid grid-cols-12 gap-2 items-center">
+              <select
+                id="bulkPriceCategorySelect"
+                class="col-span-5 rounded-2xl border border-slate-200 bg-slate-50 px-2.5 py-2 text-xs font-bold"
+              >
+                <option value="all">همه دسته‌بندی‌ها</option>
+              </select>
+              <input
+                id="bulkPricePercentInput"
+                type="number"
+                placeholder="درصد (10 یا -15)"
+                class="col-span-4 rounded-2xl border border-slate-200 bg-slate-50 px-2.5 py-2 text-xs text-center font-bold"
+              />
+              <button
+                id="applyBulkPriceBtn"
+                type="button"
+                class="tap-btn col-span-3 bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold py-2 rounded-2xl"
+              >
+                اعمال درصد
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-white rounded-3xl p-4 shadow-xs border border-slate-200/90">
+          <h3 class="text-sm font-black text-slate-800 mb-3.5 flex items-center gap-1.5">
+            <span>📋</span>
+            <span>فهرست کالاهای موجود در انبار</span>
+          </h3>
+          <div id="productList" class="space-y-3"></div>
+        </section>
+      </div>
+
+      <!-- ========================================================== -->
+      <!-- تب ۴: تقویم شمسی و پرفروش‌ترین‌ها                          -->
+      <!-- ========================================================== -->
+      <div id="pageCalendar" class="hidden space-y-3.5">
+        <div class="bg-slate-200/80 p-1 rounded-2xl grid grid-cols-2 gap-1">
+          <button
+            id="subTabCalGridBtn"
+            type="button"
+            class="tap-btn py-2.5 px-3 rounded-xl text-xs font-black bg-white text-indigo-700 shadow-2xs"
+          >
+            📅 تقویم روزهای فروش
+          </button>
+          <button
+            id="subTabBestSellersBtn"
+            type="button"
+            class="tap-btn py-2.5 px-3 rounded-xl text-xs font-bold text-slate-600 hover:text-slate-900"
+          >
+            🏆 پرفروش‌ترین لباس‌ها
+          </button>
+        </div>
+
+        <div id="calGridSubView" class="space-y-3.5">
+          <section class="bg-white rounded-3xl p-4 shadow-xs border border-slate-200/90">
+            <div class="flex items-center justify-between mb-3.5">
+              <button
+                id="prevMonthBtn"
+                type="button"
+                class="tap-btn px-3.5 py-2 rounded-2xl bg-slate-100 hover:bg-slate-200 text-xs font-bold text-slate-700"
+              >
+                ❮ ماه قبل
+              </button>
+              <div class="text-center">
+                <h2 id="calendarMonthTitle" class="text-sm font-black text-indigo-900">آبان ۱۴۰۵</h2>
+                <p class="text-[11px] text-slate-400 mt-0.5">تقویم رسمی خورشیدی ایران</p>
+              </div>
+              <button
+                id="nextMonthBtn"
+                type="button"
+                class="tap-btn px-3.5 py-2 rounded-2xl bg-slate-100 hover:bg-slate-200 text-xs font-bold text-slate-700"
+              >
+                ماه بعد ❯
+              </button>
+            </div>
+
+            <div class="grid grid-cols-7 gap-1.5 text-center text-[11px] font-bold text-slate-400 mb-2">
+              <div>ش</div>
+              <div>ی</div>
+              <div>د</div>
+              <div>س</div>
+              <div>چ</div>
+              <div>پ</div>
+              <div class="text-rose-500">ج</div>
+            </div>
+
+            <div id="jalaliCalendarGrid" class="grid grid-cols-7 gap-1.5"></div>
+
+            <div class="mt-4 pt-3.5 border-t border-slate-100 flex items-center justify-between text-xs">
+              <span class="text-slate-500 font-bold">جمع فروش کل این ماه:</span>
+              <span class="font-black text-emerald-700 text-sm"><span id="monthTotalSales">0</span> تومان</span>
+            </div>
+          </section>
+
+          <section class="bg-white rounded-3xl p-4 shadow-xs border border-slate-200/90">
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="text-sm font-black text-slate-800">
+                فاکتورهای تاریخ <span id="calendarSelectedDateText" class="text-indigo-700"></span>
+              </h3>
+              <button
+                id="addSaleForDateBtn"
+                type="button"
+                class="tap-btn text-xs bg-indigo-50 text-indigo-700 hover:bg-indigo-100 font-bold px-3 py-1.5 rounded-xl"
+              >
+                + ثبت فروش در این روز
+              </button>
+            </div>
+            <div id="calendarDaySalesList" class="space-y-2.5"></div>
+          </section>
+        </div>
+
+        <section id="bestSellersSubView" class="hidden bg-white rounded-3xl p-4 shadow-xs border border-slate-200/90">
+          <h3 class="text-sm font-black text-slate-800 mb-1 flex items-center gap-1.5">
+            <span>🏆</span>
+            <span>پرفروش‌ترین لباس‌های مغازه</span>
+          </h3>
+          <p class="text-xs text-slate-400 mb-3.5">رتبه‌بندی بر اساس تعداد فروش ثبت‌شده</p>
+          <div id="bestSellersList" class="space-y-2.5"></div>
+        </section>
+      </div>
+
+      <!-- ========================================================== -->
+      <!-- تب ۵: امنیت، قفل برنامه، بکاپ و راهنمای نصب اندروید       -->
+      <!-- ========================================================== -->
+      <div id="pageBackup" class="hidden space-y-3.5">
+        <section class="bg-gradient-to-l from-emerald-900 to-teal-900 text-white rounded-3xl p-4 shadow-xs space-y-2">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2.5">
+              <span class="text-2xl">🛡️</span>
+              <div>
+                <h2 class="text-sm font-black">سپر امنیتی و بکاپ ضدضایعه</h2>
+                <p class="text-[11px] text-emerald-200">ذخیره هم‌زمان در ۲ حافظه + امضای دیجیتال بکاپ</p>
+              </div>
+            </div>
+            <span id="lastBackupBadge" class="text-[11px] bg-white/15 px-3 py-1 rounded-full font-bold">
+              آماده بکاپ
+            </span>
+          </div>
+        </section>
+
+        <!-- کارت پشتیبان‌گیری و خروجی -->
+        <section class="bg-white rounded-3xl p-4 shadow-xs border border-slate-200/90 space-y-3">
+          <h3 class="text-sm font-black text-slate-800">💾 پشتیبان‌گیری روزانه و خروجی</h3>
+
+          <div class="space-y-2.5">
+            <button
+              id="downloadJsonBackupBtn"
+              type="button"
+              class="tap-btn w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs py-3.5 px-4 rounded-2xl shadow-xs flex items-center justify-between"
+            >
+              <span>📥 دانلود فایل پشتیبان کامل روزانه (با کد تایید سلامت)</span>
+              <span class="bg-white/20 px-2 py-0.5 rounded-lg text-[10px]">.JSON</span>
+            </button>
+
+            <button
+              id="downloadCsvExportBtn"
+              type="button"
+              class="tap-btn w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs py-3.5 px-4 rounded-2xl shadow-xs flex items-center justify-between"
+            >
+              <span>📊 دانلود جدول اکسل تمام فروش‌ها</span>
+              <span class="bg-white/20 px-2 py-0.5 rounded-lg text-[10px]">Excel</span>
+            </button>
+
+            <button
+              id="copyDailyReportBtn"
+              type="button"
+              class="tap-btn w-full bg-slate-800 hover:bg-slate-900 text-white font-bold text-xs py-3.5 px-4 rounded-2xl shadow-xs flex items-center justify-between"
+            >
+              <span>📋 کپی متنی گزارش امروز (برای تلگرام / واتساپ)</span>
+              <span class="bg-white/20 px-2 py-0.5 rounded-lg text-[10px]">کپی متن</span>
+            </button>
+          </div>
+
+          <div class="pt-3 border-t border-slate-100">
+            <p class="text-xs font-bold text-slate-700 mb-2">📤 بازگردانی اطلاعات از فایل پشتیبان:</p>
+            <label
+              for="restoreBackupFileInput"
+              class="tap-btn cursor-pointer w-full border-2 border-dashed border-indigo-200 bg-indigo-50/40 hover:bg-indigo-50 text-indigo-700 font-bold text-xs py-3.5 px-4 rounded-2xl flex items-center justify-center gap-2"
+            >
+              <span>📂 انتخاب فایل پشتیبان (.json) از حافظه گوشی</span>
+            </label>
+            <input id="restoreBackupFileInput" type="file" accept=".json,application/json" class="hidden" />
+          </div>
+        </section>
+
+        <!-- کارت قفل امنیتی ۴ رقمی و قفل فوری برنامه -->
+        <section class="bg-white rounded-3xl p-4 shadow-xs border border-slate-200/90 space-y-3">
+          <div class="flex items-center justify-between">
+            <h3 class="text-sm font-black text-slate-800">🔐 رمز عبور ۴ رقمی و قفل کل برنامه</h3>
+            <button
+              id="lockAppNowBtn"
+              type="button"
+              class="tap-btn text-[11px] bg-slate-900 text-white font-bold px-3 py-1.5 rounded-xl"
+            >
+              🔒 قفل فوری صفحه
+            </button>
+          </div>
+          <p class="text-xs text-slate-500">
+            با تعیین رمز، مشاهده سود خالص، حذف یا ویرایش انبار و صفر کردن فروش بدون رمز شما غیرممکن می‌شود.
+          </p>
+
+          <form id="pinSettingsForm" class="flex items-center gap-2">
+            <input
+              id="shopPinInput"
+              type="password"
+              inputmode="numeric"
+              maxlength="4"
+              placeholder="رمز ۴ رقمی"
+              class="ltr-input flex-1 rounded-2xl border border-slate-200 bg-slate-50 px-3 py-2.5 text-sm font-black text-center focus:bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            />
+            <button
+              type="submit"
+              class="tap-btn bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs px-4 py-3 rounded-2xl shrink-0"
+            >
+              ذخیره رمز
+            </button>
+            <button
+              id="removePinBtn"
+              type="button"
+              class="tap-btn bg-rose-50 hover:bg-rose-100 text-rose-600 border border-rose-200 font-bold text-xs px-3 py-3 rounded-2xl shrink-0"
+            >
+              حذف رمز
+            </button>
+          </form>
+          <p id="pinStatusText" class="text-xs font-bold text-emerald-700"></p>
+        </section>
+      </div>
+    </main>
+
+    <!-- ==================================================== -->
+    <!-- پنجره هوشمند ثبت فروش با انتخاب سایز و تخفیف (Modal)  -->
+    <!-- ==================================================== -->
+    <div
+      id="saleModalBackdrop"
+      class="hidden fixed inset-0 bg-slate-900/60 backdrop-blur-xs z-40 flex items-end sm:items-center justify-center p-0 sm:p-4"
+    >
+      <div class="bg-white w-full max-w-[430px] rounded-t-3xl sm:rounded-3xl p-5 shadow-2xl border border-slate-200 space-y-3.5 max-h-[92vh] overflow-y-auto">
+        <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+          <div>
+            <h3 id="modalProductName" class="text-sm font-black text-slate-900">ثبت فروش لباس</h3>
+            <p class="text-xs text-slate-500 mt-0.5">
+              قیمت اتیکت: <strong id="modalBasePrice" class="text-indigo-700">0</strong> تومان |
+              موجودی کل: <strong id="modalStockLeft">0</strong> عدد
+            </p>
+          </div>
+          <button
+            id="closeSaleModalBtn"
+            type="button"
+            class="tap-btn w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 font-bold text-sm flex items-center justify-center"
+          >
+            ✕
+          </button>
+        </div>
+
+        <form id="confirmSaleForm" class="space-y-3.5">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-2">۱. کدام سایز را می‌فروشید؟</label>
+            <div id="modalSizeSelector" class="flex flex-wrap gap-2"></div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3">
+            <div>
+              <label for="saleQtyInput" class="block text-xs font-bold text-slate-600 mb-1">تعداد</label>
+              <input
+                id="saleQtyInput"
+                type="number"
+                min="1"
+                value="1"
+                required
+                class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-3 py-2.5 text-sm font-black text-center focus:bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              />
+            </div>
+            <div>
+              <label for="salePaymentMethod" class="block text-xs font-bold text-slate-600 mb-1">روش پرداخت</label>
+              <select
+                id="salePaymentMethod"
+                class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-3 py-2.5 text-xs font-bold focus:bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              >
+                <option value="کارتخوان 💳">کارتخوان 💳</option>
+                <option value="کارت به کارت 📱">کارت به کارت 📱</option>
+                <option value="نقدی 💵">نقدی 💵</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex items-center justify-between mb-1.5">
+              <label for="saleFinalUnitPrice" class="text-xs font-bold text-slate-700">
+                ۲. قیمت فروش هر عدد به مشتری (تومان)
+              </label>
+              <span id="discountLiveBadge" class="text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-lg">
+                بدون تخفیف
+              </span>
+            </div>
+            <input
+              id="saleFinalUnitPrice"
+              type="text"
+              inputmode="numeric"
+              required
+              class="ltr-input w-full rounded-2xl border-2 border-indigo-400 bg-indigo-50/20 px-3.5 py-2.5 text-base font-black text-indigo-950 focus:outline-none focus:ring-2 focus:ring-indigo-600"
+            />
+
+            <div class="flex flex-wrap items-center gap-1.5 mt-2">
+              <span class="text-[11px] text-slate-400">تخفیف سریع:</span>
+              <button type="button" data-disc="reset" class="tap-btn px-2.5 py-1 rounded-xl text-[11px] font-bold bg-slate-100 text-slate-700">قیمت اصلی</button>
+              <button type="button" data-disc="p5" class="tap-btn px-2.5 py-1 rounded-xl text-[11px] font-bold bg-amber-50 text-amber-800 border border-amber-200">۵٪ تخفیف</button>
+              <button type="button" data-disc="p10" class="tap-btn px-2.5 py-1 rounded-xl text-[11px] font-bold bg-amber-50 text-amber-800 border border-amber-200">۱۰٪ تخفیف</button>
+              <button type="button" data-disc="m50" class="tap-btn px-2.5 py-1 rounded-xl text-[11px] font-bold bg-rose-50 text-rose-700 border border-rose-200">-50,000</button>
+              <button type="button" data-disc="m100" class="tap-btn px-2.5 py-1 rounded-xl text-[11px] font-bold bg-rose-50 text-rose-700 border border-rose-200">-100,000</button>
+            </div>
+          </div>
+
+          <div>
+            <label for="saleNoteInput" class="block text-xs font-bold text-slate-600 mb-1">توضیح کوتاه (اختیاری)</label>
+            <input
+              id="saleNoteInput"
+              type="text"
+              placeholder="مثلاً: تخفیف مشتری آشنا"
+              class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-3.5 py-2 text-xs focus:bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            />
+          </div>
+
+          <div class="bg-slate-50 rounded-2xl p-3 border border-slate-200/80 flex items-center justify-between text-xs">
+            <div>
+              <span class="text-slate-500">مبلغ قابل دریافت:</span>
+              <p class="text-sm font-black text-emerald-700 mt-0.5">
+                <span id="modalTotalPayable">0</span> تومان
+              </p>
+            </div>
+            <div class="text-left">
+              <span class="text-slate-500">سود خالص شما:</span>
+              <p class="text-xs font-black text-indigo-700 mt-0.5">
+                <span id="modalEstimatedProfit">0</span> تومان
+              </p>
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            class="tap-btn w-full bg-emerald-600 hover:bg-emerald-700 text-white font-black text-sm py-3.5 rounded-2xl shadow-md"
+          >
+            ✅ تایید و ثبت در تاریخ <span id="modalConfirmDateText"></span>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- مودال قفل امنیتی با محافظت در برابر رمز اشتباه مکرر -->
+    <div
+      id="pinUnlockModal"
+      class="hidden fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 flex items-center justify-center p-4"
+    >
+      <div class="bg-white w-full max-w-xs rounded-3xl p-6 shadow-2xl border border-slate-200 text-center space-y-3.5">
+        <div class="w-14 h-14 rounded-2xl bg-indigo-50 text-indigo-700 flex items-center justify-center text-3xl mx-auto">🔐</div>
+        <h3 class="text-sm font-black text-slate-900">قفل امنیتی صاحب مغازه</h3>
+        <p id="pinModalPromptText" class="text-xs text-slate-500">رمز ۴ رقمی خود را وارد کنید:</p>
+        <form id="unlockPinForm" class="space-y-3">
+          <input
+            id="unlockPinInput"
+            type="password"
+            inputmode="numeric"
+            maxlength="4"
+            required
+            placeholder="••••"
+            class="ltr-input w-full rounded-2xl border-2 border-indigo-400 px-3 py-2.5 text-lg font-black text-center tracking-widest focus:outline-none"
+          />
+          <div class="grid grid-cols-2 gap-2">
+            <button
+              type="submit"
+              class="tap-btn bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs py-3 rounded-2xl"
+            >
+              تایید رمز
+            </button>
+            <button
+              id="cancelPinModalBtn"
+              type="button"
+              class="tap-btn bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs py-3 rounded-2xl"
+            >
+              انصراف
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- نوار ناوبری پایین موبایل (Floating Bottom Navigation) -->
+    <nav class="fixed bottom-0 inset-x-0 z-30 pointer-events-none">
+      <div class="max-w-[430px] mx-auto px-2 pb-2 pt-1 pointer-events-auto">
+        <div class="bg-white/95 backdrop-blur-md border border-slate-200/90 rounded-3xl shadow-xl grid grid-cols-5 py-1.5 px-1.5 gap-1">
+          <button
+            id="navTabSales"
+            type="button"
+            data-tab="sales"
+            class="tap-btn flex flex-col items-center justify-center py-2 rounded-2xl bg-indigo-600 text-white font-black text-[10px] shadow-xs"
+          >
+            <span class="text-base">🛍️</span>
+            <span class="mt-0.5">فروش محصول</span>
+          </button>
+
+          <button
+            id="navTabAddProduct"
+            type="button"
+            data-tab="add"
+            class="tap-btn flex flex-col items-center justify-center py-2 rounded-2xl text-slate-500 hover:bg-slate-100 font-bold text-[10px]"
+          >
+            <span class="text-base">➕</span>
+            <span class="mt-0.5">افزودن کالا</span>
+          </button>
+
+          <button
+            id="navTabInventory"
+            type="button"
+            data-tab="inventory"
+            class="tap-btn flex flex-col items-center justify-center py-2 rounded-2xl text-slate-500 hover:bg-slate-100 font-bold text-[10px]"
+          >
+            <span class="text-base">📦</span>
+            <span class="mt-0.5">انبار و افزودن کالا</span>
+          </button>
+
+          <button
+            id="navTabCalendar"
+            type="button"
+            data-tab="calendar"
+            class="tap-btn flex flex-col items-center justify-center py-2 rounded-2xl text-slate-500 hover:bg-slate-100 font-bold text-[10px]"
+          >
+            <span class="text-base">📅</span>
+            <span class="mt-0.5">تقویم شمسی فروش</span>
+          </button>
+
+          <button
+            id="navTabBackup"
+            type="button"
+            data-tab="backup"
+            class="tap-btn flex flex-col items-center justify-center py-2 rounded-2xl text-slate-500 hover:bg-slate-100 font-bold text-[10px]"
+          >
+            <span class="text-base">🛡️</span>
+            <span class="mt-0.5">امنیت و بکاپ</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <script>
+    // =========================================================
+    // ۱. موتور دقیق تاریخ شمسی ایران و همگام‌سازی زنده ساعت
+    // =========================================================
+    const JALALI_MONTH_NAMES = [
+      'فروردین', 'اردیبهشت', 'خرداد', 'تیر', 'مرداد', 'شهریور',
+      'مهر', 'آبان', 'آذر', 'دی', 'بهمن', 'اسفند'
+    ];
+
+    function gregorianToJalali(gy, gm, gd) {
+      const g_d_m = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334];
+      const gy2 = gm > 2 ? gy + 1 : gy;
+      let days =
+        355666 +
+        365 * gy +
+        Math.floor((gy2 + 3) / 4) -
+        Math.floor((gy2 + 99) / 100) +
+        Math.floor((gy2 + 399) / 400) +
+        gd +
+        g_d_m[gm - 1];
+      let jy = -1595 + 33 * Math.floor(days / 12053);
+      days %= 12053;
+      jy += 4 * Math.floor(days / 1461);
+      days %= 1461;
+      if (days > 365) {
+        jy += Math.floor((days - 1) / 365);
+        days = (days - 1) % 365;
+      }
+      const jm = days < 186 ? 1 + Math.floor(days / 31) : 7 + Math.floor((days - 186) / 30);
+      const jd = 1 + (days < 186 ? days % 31 : (days - 186) % 30);
+      return [jy, jm, jd];
+    }
+
+    function jalaliToGregorian(jy, jm, jd) {
+      jy += 1595;
+      let days =
+        -355668 +
+        365 * jy +
+        Math.floor(jy / 33) * 8 +
+        Math.floor(((jy % 33) + 3) / 4) +
+        jd +
+        (jm < 7 ? (jm - 1) * 31 : (jm - 7) * 30 + 186);
+      let gy = 400 * Math.floor(days / 146097);
+      days %= 146097;
+      if (days > 36524) {
+        gy += 100 * Math.floor(--days / 36524);
+        days %= 36524;
+        if (days >= 365) days++;
+      }
+      gy += 4 * Math.floor(days / 1461);
+      days %= 1461;
+      if (days > 365) {
+        gy += Math.floor((days - 1) / 365);
+        days = (days - 1) % 365;
+      }
+      let gd = days + 1;
+      const sal_a = [0, 31, (gy % 4 === 0 && gy % 100 !== 0) || gy % 400 === 0 ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+      let gm = 0;
+      for (gm = 0; gm < 13 && gd > sal_a[gm]; gm++) {
+        gd -= sal_a[gm];
+      }
+      return [gy, gm, gd];
+    }
+
+    function getJalaliMonthLength(jy, jm) {
+      if (jm <= 6) return 31;
+      if (jm <= 11) return 30;
+      const [gy1, gm1, gd1] = jalaliToGregorian(jy, 12, 30);
+      const [jyCheck] = gregorianToJalali(gy1, gm1, gd1);
+      return jyCheck === jy ? 30 : 29;
+    }
+
+    function pad2(n) {
+      return String(n).padStart(2, '0');
+    }
+
+    function makeJalaliKey(jy, jm, jd) {
+      return `${jy}/${pad2(jm)}/${pad2(jd)}`;
+    }
+
+    function parseJalaliKey(key) {
+      const parts = String(key || '1405/08/05').split('/').map(Number);
+      return { jy: parts[0] || 1405, jm: parts[1] || 1, jd: parts[2] || 1 };
+    }
+
+    function formatJalaliHuman(key) {
+      const { jy, jm, jd } = parseJalaliKey(key);
+      return `${jd} ${JALALI_MONTH_NAMES[(jm - 1) % 12]} ${jy}`;
+    }
+
+    // دریافت ساعت و تاریخ دقیق از ساعت سیستم گوشی
+    let networkTimeOffsetMs = 0;
+    function getAccurateNow() {
+      return new Date(Date.now() + networkTimeOffsetMs);
+    }
+
+    function getCurrentJalaliParts() {
+      const d = getAccurateNow();
+      return gregorianToJalali(d.getFullYear(), d.getMonth() + 1, d.getDate());
+    }
+
+    function getAccurateTimeStr() {
+      const d = getAccurateNow();
+      return `${pad2(d.getHours())}:${pad2(d.getMinutes())}:${pad2(d.getSeconds())}`;
+    }
+
+    let [todayJY, todayJM, todayJD] = getCurrentJalaliParts();
+    let TODAY_KEY = makeJalaliKey(todayJY, todayJM, todayJD);
+    const YESTERDAY_KEY = makeJalaliKey(
+      todayJY,
+      todayJD > 1 ? todayJM : Math.max(1, todayJM - 1),
+      todayJD > 1 ? todayJD - 1 : 28
+    );
+
+    // =========================================================
+    // ۲. فرمت سه‌رقمی اعداد با ویرگول (100,000)
+    // =========================================================
+    function formatComma(num) {
+      const n = Math.round(Number(num) || 0);
+      return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    }
+
+    function parseCommaNumber(str) {
+      if (!str) return 0;
+      const normalized = String(str)
+        .replace(/[۰-۹]/g, (d) => '۰۱۲۳۴۵۶۷۸۹'.indexOf(d))
+        .replace(/[٠-٩]/g, (d) => '٠١٢٣٤٥٦٧٨٩'.indexOf(d))
+        .replace(/[^0-9]/g, '');
+      return parseInt(normalized, 10) || 0;
+    }
+
+    function bindCommaInput(inputEl, onChangeCallback) {
+      inputEl.addEventListener('input', function () {
+        const rawVal = parseCommaNumber(this.value);
+        this.value = rawVal > 0 ? formatComma(rawVal) : '';
+        if (onChangeCallback) onChangeCallback(rawVal);
+      });
+    }
+
+    // =========================================================
+    // ۳. ذخیره‌سازی دوگانه ضدضایعه + امضای سلامت بکاپ
+    // =========================================================
+    const STORAGE_KEY = 'boutique_offline_app_v3_pro';
+
+    function computeChecksum(str) {
+      let hash = 5381;
+      for (let i = 0; i < str.length; i++) {
+        hash = ((hash << 5) + hash + str.charCodeAt(i)) >>> 0;
+      }
+      return hash.toString(16);
+    }
+
+    const defaultState = {
+      pinCode: '',
+      privacyHideProfit: false,
+      lastBackupDate: '',
+      lastVerifiedTimestamp: Date.now(),
+      categories: [
+        'سویشرت و هودی',
+        'تیشرت و پیراهن',
+        'شلوار و جین',
+        'مانتو و کاپشن',
+        'کفش و کتانی'
+      ],
+      products: [
+        {
+          id: 'p1',
+          sku: '101',
+          name: 'سویشرت کلاه‌دار توکرکی (مشکی)',
+          category: 'سویشرت و هودی',
+          icon: '🧥',
+          image: '',
+          buyPrice: 580000,
+          price: 850000,
+          qty: 6,
+          sizes: [
+            { label: 'L', qty: 3 },
+            { label: 'XL', qty: 2 },
+            { label: '2XL', qty: 1 }
+          ]
+        },
+        {
+          id: 'p2',
+          sku: '102',
+          name: 'شلوار جین مام‌استایل ذغالی',
+          category: 'شلوار و جین',
+          icon: '👖',
+          image: '',
+          buyPrice: 620000,
+          price: 950000,
+          qty: 3,
+          sizes: [
+            { label: '38', qty: 1 },
+            { label: '40', qty: 1 },
+            { label: '42', qty: 1 }
+          ]
+        },
+        {
+          id: 'p3',
+          sku: '103',
+          name: 'پیراهن مردانه کتان آستین‌بلند',
+          category: 'تیشرت و پیراهن',
+          icon: '👔',
+          image: '',
+          buyPrice: 420000,
+          price: 680000,
+          qty: 8,
+          sizes: [
+            { label: 'M', qty: 2 },
+            { label: 'L', qty: 4 },
+            { label: 'XL', qty: 2 }
+          ]
+        },
+        {
+          id: 'p4',
+          sku: '104',
+          name: 'هودی نخ‌پنبه اورسایز (طوسی)',
+          category: 'سویشرت و هودی',
+          icon: '👕',
+          image: '',
+          buyPrice: 500000,
+          price: 790000,
+          qty: 5,
+          sizes: [
+            { label: 'L', qty: 3 },
+            { label: 'XL', qty: 2 }
+          ]
+        }
+      ],
+      sales: [
+        {
+          id: 's_sample_1',
+          dateKey: TODAY_KEY,
+          time: '10:45:12',
+          productId: 'p1',
+          productName: 'سویشرت کلاه‌دار توکرکی (مشکی)',
+          sizeLabel: 'XL',
+          qty: 1,
+          baseUnitPrice: 850000,
+          soldUnitPrice: 800000,
+          buyUnitPrice: 580000,
+          paymentMethod: 'کارتخوان 💳',
+          note: '۵۰,۰۰۰ ت تخفیف مشتری نقد'
+        },
+        {
+          id: 's_sample_2',
+          dateKey: YESTERDAY_KEY,
+          time: '18:20:05',
+          productId: 'p3',
+          productName: 'پیراهن مردانه کتان آستین‌بلند',
+          sizeLabel: 'L',
+          qty: 2,
+          baseUnitPrice: 680000,
+          soldUnitPrice: 680000,
+          buyUnitPrice: 420000,
+          paymentMethod: 'کارت به کارت 📱',
+          note: 'سایز L'
+        }
+      ],
+      expenses: []
+    };
+
+    let appState = loadState();
+    let activeTab = 'sales';
+    let salesSubTab = 'pos';
+    let calendarSubTab = 'grid';
+    let selectedDateKey = TODAY_KEY;
+    let calendarViewYear = todayJY;
+    let calendarViewMonth = todayJM;
+    let activeCategoryFilter = 'all';
+    let modalActiveProduct = null;
+    let modalSelectedSize = '';
+
+    // متغیرهای امنیتی PIN و قفل موقت ضدحدس رمز
+    let failedPinAttempts = 0;
+    let pinLockoutUntil = 0;
+    let pendingPinCallback = null;
+
+    let currentFormIcon = '🧥';
+    let currentFormImageData = '';
+    let currentFormSizes = [
+      { label: 'M', qty: 1 },
+      { label: 'L', qty: 2 },
+      { label: 'XL', qty: 1 }
+    ];
+
+    function loadState() {
+      try {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+          const parsed = JSON.parse(saved);
+          if (parsed && Array.isArray(parsed.products) && Array.isArray(parsed.sales)) {
+            if (!Array.isArray(parsed.categories) || parsed.categories.length === 0) {
+              parsed.categories = [...defaultState.categories];
+            }
+            if (!Array.isArray(parsed.expenses)) parsed.expenses = [];
+            return parsed;
+          }
+        }
+      } catch (e) {
+        console.warn('Storage load error:', e);
+      }
+      return JSON.parse(JSON.stringify(defaultState));
+    }
+
+    function saveState() {
+      try {
+        const nowTs = getAccurateNow().getTime();
+        if (!appState.lastVerifiedTimestamp || nowTs > appState.lastVerifiedTimestamp) {
+          appState.lastVerifiedTimestamp = nowTs;
+        }
+        const serialized = JSON.stringify(appState);
+        localStorage.setItem(STORAGE_KEY, serialized);
+        saveToIndexedDBMirror(serialized);
+      } catch (e) {
+        console.warn('Storage save error:', e);
+      }
+    }
+
+    function saveToIndexedDBMirror(serializedData) {
+      try {
+        if (!window.indexedDB) return;
+        const req = indexedDB.open('BoutiqueOfflineVaultDB', 1);
+        req.onupgradeneeded = function (ev) {
+          const db = ev.target.result;
+          if (!db.objectStoreNames.contains('vault')) {
+            db.createObjectStore('vault');
+          }
+        };
+        req.onsuccess = function (ev) {
+          const db = ev.target.result;
+          const tx = db.transaction('vault', 'readwrite');
+          tx.objectStore('vault').put(serializedData, 'latest_state');
+        };
+      } catch (err) {
+        // LocalStorage active
+      }
+    }
+
+    function escapeHtml(str) {
+      return String(str || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    let bannerTimer = null;
+    function showMessage(text, type = 'success') {
+      const banner = document.getElementById('statusBanner');
+      banner.textContent = text;
+      banner.className =
+        'rounded-2xl px-4 py-3 text-xs font-bold transition-all shadow-sm ' +
+        (type === 'success'
+          ? 'bg-emerald-600 text-white'
+          : 'bg-amber-500 text-white');
+      if (bannerTimer) clearTimeout(bannerTimer);
+      bannerTimer = setTimeout(() => {
+        banner.className = 'hidden';
+      }, 3200);
+    }
+
+    // =========================================================
+    // ۴. تایمر زنده ساعت و محافظ تاریخ (بدون قاطی شدن روز و ساعت)
+    // =========================================================
+    let clockIntervalId = null;
+    function startLiveClockAndDateGuard() {
+      if (clockIntervalId) clearInterval(clockIntervalId);
+
+      function tick() {
+        const nowObj = getAccurateNow();
+        const timeStr = `${pad2(nowObj.getHours())}:${pad2(nowObj.getMinutes())}:${pad2(nowObj.getSeconds())}`;
+        const clockEl = document.getElementById('liveClockDisplay');
+        if (clockEl) clockEl.textContent = timeStr;
+
+        // بررسی تغییر روز در ساعت 00:00 نیمه‌شب
+        const [jy, jm, jd] = gregorianToJalali(nowObj.getFullYear(), nowObj.getMonth() + 1, nowObj.getDate());
+        const liveKey = makeJalaliKey(jy, jm, jd);
+        if (liveKey !== TODAY_KEY) {
+          const wasOnToday = selectedDateKey === TODAY_KEY;
+          todayJY = jy;
+          todayJM = jm;
+          todayJD = jd;
+          TODAY_KEY = liveKey;
+          if (wasOnToday) {
+            selectedDateKey = TODAY_KEY;
+          }
+          renderAll();
+        }
+
+        // بررسی دستکاری یا عقب افتادن ساعت باتری گوشی (بیش از ۱۰ دقیقه عقب‌تر از آخرین تراکنش)
+        const tamperEl = document.getElementById('clockTamperAlert');
+        if (appState.lastVerifiedTimestamp && nowObj.getTime() + 600000 < appState.lastVerifiedTimestamp) {
+          tamperEl.classList.remove('hidden');
+        } else {
+          tamperEl.classList.add('hidden');
+        }
+      }
+
+      tick();
+      clockIntervalId = setInterval(tick, 1000);
+    }
+
+    // =========================================================
+    // ۵. سیستم امنیتی رمز عبور ۴ رقمی برای عملیات حساس
+    // =========================================================
+    function requirePinAuth(promptMessage, onAuthorizedCallback) {
+      if (!appState.pinCode) {
+        onAuthorizedCallback();
+        return;
+      }
+      if (Date.now() < pinLockoutUntil) {
+        const waitSec = Math.ceil((pinLockoutUntil - Date.now()) / 1000);
+        showMessage(`به دلیل رمز اشتباه مکرر، لطفاً ${waitSec} ثانیه صبر کنید.`, 'warning');
+        return;
+      }
+      pendingPinCallback = onAuthorizedCallback;
+      document.getElementById('pinModalPromptText').textContent = promptMessage || 'رمز ۴ رقمی صاحب مغازه را وارد کنید:';
+      document.getElementById('unlockPinInput').value = '';
+      document.getElementById('pinUnlockModal').classList.remove('hidden');
+    }
+
+    // =========================================================
+    // ۶. فشرده‌سازی عکس محصول با Canvas
+    // =========================================================
+    function compressImageFile(file, callback) {
+      const reader = new FileReader();
+      reader.onload = function (ev) {
+        const img = new Image();
+        img.onload = function () {
+          const canvas = document.createElement('canvas');
+          const maxDim = 220;
+          let w = img.width;
+          let h = img.height;
+          if (w > h) {
+            if (w > maxDim) {
+              h = Math.round((h * maxDim) / w);
+              w = maxDim;
+            }
+          } else {
+            if (h > maxDim) {
+              w = Math.round((w * maxDim) / h);
+              h = maxDim;
+            }
+          }
+          canvas.width = w;
+          canvas.height = h;
+          const ctx = canvas.getContext('2d');
+          ctx.drawImage(img, 0, 0, w, h);
+          const dataUrl = canvas.toDataURL('image/jpeg', 0.75);
+          callback(dataUrl);
+        };
+        img.src = ev.target.result;
+      };
+      reader.readAsDataURL(file);
+    }
+
+    function renderFormPhotoPreview() {
+      const box = document.getElementById('productPhotoPreviewBox');
+      if (currentFormImageData) {
+        box.innerHTML = `<img src="${currentFormImageData}" alt="عکس لباس" class="w-full h-full object-cover" />`;
+      } else {
+        box.textContent = currentFormIcon || '🧥';
+      }
+    }
+
+    // =========================================================
+    // ۷. سازنده هوشمند سایزها
+    // =========================================================
+    function renderSizeBuilder() {
+      const container = document.getElementById('sizeBuilderRows');
+      container.innerHTML = '';
+
+      let totalQty = 0;
+      currentFormSizes.forEach((sz, idx) => {
+        totalQty += Number(sz.qty) || 0;
+        const item = document.createElement('div');
+        item.className = 'flex items-center gap-1.5 bg-slate-50 p-2 rounded-2xl border border-slate-200';
+        item.innerHTML = `
+          <input
+            type="text"
+            data-size-idx="${idx}"
+            data-field="label"
+            value="${escapeHtml(sz.label)}"
+            placeholder="سایز"
+            class="w-14 rounded-xl bg-white border border-slate-200 px-2 py-1.5 text-xs font-black text-indigo-700 text-center"
+          />
+          <input
+            type="number"
+            min="0"
+            data-size-idx="${idx}"
+            data-field="qty"
+            value="${Number(sz.qty) || 0}"
+            class="w-full rounded-xl bg-white border border-slate-200 px-2 py-1.5 text-xs font-bold text-center"
+          />
+          <button
+            type="button"
+            data-remove-size="${idx}"
+            class="text-rose-500 hover:bg-rose-100 px-2 py-1 rounded-xl text-xs font-bold"
+          >
+            ✕
+          </button>
+        `;
+        container.appendChild(item);
+      });
+
+      document.getElementById('sizeSumBadge').textContent = totalQty;
+      document.getElementById('productQty').value = totalQty;
+    }
+
+    // =========================================================
+    // ۸. محاسبه آمار روز
+    // =========================================================
+    function getStatsForDate(dateKey) {
+      const daySales = appState.sales.filter((s) => s.dateKey === dateKey);
+      const dayExpenses = (appState.expenses || []).filter((ex) => ex.dateKey === dateKey);
+
+      let totalRevenue = 0;
+      let totalCount = 0;
+      let totalDiscount = 0;
+      let grossProfit = 0;
+
+      daySales.forEach((s) => {
+        const rev = s.soldUnitPrice * s.qty;
+        const baseRev = s.baseUnitPrice * s.qty;
+        const cost = (s.buyUnitPrice || 0) * s.qty;
+        totalRevenue += rev;
+        totalCount += s.qty;
+        totalDiscount += Math.max(0, baseRev - rev);
+        grossProfit += rev - cost;
+      });
+
+      const totalExpense = dayExpenses.reduce((sum, e) => sum + (e.amount || 0), 0);
+      const totalProfit = grossProfit - totalExpense;
+
+      return { daySales, dayExpenses, totalRevenue, totalCount, totalDiscount, totalExpense, totalProfit };
+    }
+
+    // =========================================================
+    // ۹. رندر کل بخش‌ها
+    // =========================================================
+    function renderAll() {
+      document.getElementById('headerJalaliDate').textContent =
+        'امروز: ' + formatJalaliHuman(TODAY_KEY);
+
+      const hideProfit = Boolean(appState.privacyHideProfit);
+      document.getElementById('privacyIcon').textContent = hideProfit ? '🔒' : '👁️';
+      document.getElementById('privacyText').textContent = hideProfit ? 'سود مخفی' : 'سود آشکار';
+
+      document.getElementById('vaultHealthBadge').textContent = appState.pinCode
+        ? 'قفل رمزدار فعال'
+        : 'ذخیره دوگانه فعال';
+
+      const isToday = selectedDateKey === TODAY_KEY;
+      document.getElementById('selectedDateBadge').textContent =
+        formatJalaliHuman(selectedDateKey) + (isToday ? ' (امروز)' : '');
+
+      const stats = getStatsForDate(selectedDateKey);
+      document.getElementById('todaySalesAmount').textContent = formatComma(stats.totalRevenue);
+      document.getElementById('todaySalesCount').textContent = formatComma(stats.totalCount);
+      document.getElementById('todayProfitAmount').textContent = hideProfit
+        ? '•••'
+        : formatComma(stats.totalProfit);
+      document.getElementById('todayDiscountAmount').textContent = formatComma(stats.totalDiscount);
+      document.getElementById('todayExpenseAmount').textContent = formatComma(stats.totalExpense);
+      document.getElementById('salesLogCountBadge').textContent = stats.daySales.length;
+
+      const totalStock = appState.products.reduce((acc, p) => acc + (Number(p.qty) || 0), 0);
+      document.getElementById('totalStockCount').textContent = formatComma(totalStock);
+      document.getElementById('itemTypesBadge').textContent =
+        formatComma(appState.products.length) + ' مدل کالا';
+
+      renderCategoryControls();
+      renderSalesPage(stats.daySales, stats.dayExpenses);
+      renderInventoryPage();
+      renderCalendarPage(stats.daySales);
+      renderBackupAndSecurityPage();
+    }
+
+    function renderCategoryControls() {
+      const cats = appState.categories;
+
+      const filterBar = document.getElementById('categoryFilterBar');
+      filterBar.innerHTML = '';
+      const allBtn = document.createElement('button');
+      allBtn.type = 'button';
+      allBtn.setAttribute('data-cat', 'all');
+      allBtn.className =
+        activeCategoryFilter === 'all'
+          ? 'tap-btn px-3.5 py-2 rounded-xl font-bold bg-indigo-600 text-white shrink-0 shadow-2xs'
+          : 'tap-btn px-3.5 py-2 rounded-xl font-medium bg-slate-100 text-slate-600 shrink-0';
+      allBtn.textContent = 'همه';
+      filterBar.appendChild(allBtn);
+
+      cats.forEach((c) => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.setAttribute('data-cat', c);
+        btn.className =
+          activeCategoryFilter === c
+            ? 'tap-btn px-3.5 py-2 rounded-xl font-bold bg-indigo-600 text-white shrink-0 shadow-2xs'
+            : 'tap-btn px-3.5 py-2 rounded-xl font-medium bg-slate-100 text-slate-600 shrink-0';
+        btn.textContent = c;
+        filterBar.appendChild(btn);
+      });
+
+      const prodCatSelect = document.getElementById('productCategory');
+      const currentVal = prodCatSelect.value;
+      prodCatSelect.innerHTML = '';
+      const bulkSelect = document.getElementById('bulkPriceCategorySelect');
+      const currentBulk = bulkSelect.value || 'all';
+      bulkSelect.innerHTML = '<option value="all">همه دسته‌بندی‌ها</option>';
+
+      cats.forEach((c) => {
+        const opt = document.createElement('option');
+        opt.value = c;
+        opt.textContent = c;
+        prodCatSelect.appendChild(opt);
+
+        const bOpt = document.createElement('option');
+        bOpt.value = c;
+        bOpt.textContent = c;
+        bulkSelect.appendChild(bOpt);
+      });
+      if (cats.includes(currentVal)) prodCatSelect.value = currentVal;
+      if (currentBulk === 'all' || cats.includes(currentBulk)) bulkSelect.value = currentBulk;
+
+      const editList = document.getElementById('editableCategoryList');
+      editList.innerHTML = '';
+      cats.forEach((c, idx) => {
+        const row = document.createElement('div');
+        row.className = 'flex items-center gap-1.5 bg-white p-2 rounded-xl border border-indigo-100';
+        row.innerHTML = `
+          <input
+            type="text"
+            data-edit-cat-idx="${idx}"
+            value="${escapeHtml(c)}"
+            class="flex-1 text-xs font-bold px-2.5 py-1 rounded-lg border border-slate-200"
+          />
+          <button
+            type="button"
+            data-save-cat-idx="${idx}"
+            class="tap-btn bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1.5 rounded-lg"
+          >
+            ذخیره نام
+          </button>
+          <button
+            type="button"
+            data-del-cat-idx="${idx}"
+            class="tap-btn bg-rose-50 text-rose-600 border border-rose-200 text-[10px] font-bold px-2.5 py-1.5 rounded-lg"
+          >
+            حذف
+          </button>
+        `;
+        editList.appendChild(row);
+      });
+    }
+
+    function getProductThumbHtml(product) {
+      if (product.image) {
+        return `<img src="${product.image}" alt="${escapeHtml(product.name)}" class="w-14 h-14 rounded-2xl object-cover border border-slate-200 shrink-0" />`;
+      }
+      return `<div class="w-14 h-14 rounded-2xl bg-indigo-50/80 border border-indigo-100 flex items-center justify-center text-2xl shrink-0">${escapeHtml(product.icon || '🧥')}</div>`;
+    }
+
+    function getSizesBadgesHtml(product) {
+      if (!Array.isArray(product.sizes) || product.sizes.length === 0) {
+        return '';
+      }
+      return (
+        '<div class="flex flex-wrap gap-1.5 mt-2">' +
+        product.sizes
+          .map((s) => {
+            const q = Number(s.qty) || 0;
+            const cls =
+              q <= 0
+                ? 'bg-slate-100 text-slate-400 line-through'
+                : 'bg-white text-slate-700 border border-slate-200';
+            return `<span class="text-[11px] px-2 py-0.5 rounded-lg font-bold ${cls}">${escapeHtml(s.label)}: ${q}</span>`;
+          })
+          .join('') +
+        '</div>'
+      );
+    }
+
+    function renderSalesPage(daySales, dayExpenses) {
+      const query = (document.getElementById('salesSearchInput').value || '').trim().toLowerCase();
+      const salesListEl = document.getElementById('salesProductList');
+      salesListEl.innerHTML = '';
+
+      const filtered = appState.products.filter((p) => {
+        const matchesCat = activeCategoryFilter === 'all' || p.category === activeCategoryFilter;
+        const sizeText = Array.isArray(p.sizes) ? p.sizes.map((s) => s.label.toLowerCase()).join(' ') : '';
+        const matchesQuery =
+          !query ||
+          p.name.toLowerCase().includes(query) ||
+          String(p.sku || '').toLowerCase().includes(query) ||
+          (p.category || '').toLowerCase().includes(query) ||
+          sizeText.includes(query);
+        return matchesCat && matchesQuery;
+      });
+
+      if (filtered.length === 0) {
+        salesListEl.innerHTML = `
+          <div class="text-center py-10 text-slate-400 text-xs">
+            لباسی با این مشخصات پیدا نشد.
+          </div>
+        `;
+      } else {
+        filtered.forEach((product) => {
+          const isOut = product.qty <= 0;
+          const isLow = product.qty > 0 && product.qty <= 2;
+          const row = document.createElement('div');
+          row.className =
+            'p-3.5 rounded-2xl border transition flex items-center justify-between gap-3 ' +
+            (isOut
+              ? 'bg-rose-50/30 border-rose-200'
+              : isLow
+              ? 'bg-amber-50/30 border-amber-200'
+              : 'bg-slate-50/70 hover:bg-slate-50 border-slate-200/90');
+
+          row.innerHTML = `
+            ${getProductThumbHtml(product)}
+            <div class="min-w-0 flex-1">
+              <div class="flex items-center gap-1.5 flex-wrap">
+                ${product.sku ? `<span class="text-[10px] bg-slate-800 text-white px-2 py-0.5 rounded-md font-bold">#${escapeHtml(product.sku)}</span>` : ''}
+                <span class="text-[10px] bg-indigo-50 text-indigo-700 px-2 py-0.5 rounded-md font-bold">${escapeHtml(product.category || 'لباس')}</span>
+              </div>
+              <p class="text-sm font-black text-slate-900 truncate mt-1">${escapeHtml(product.name)}</p>
+              <div class="flex flex-wrap items-center gap-x-3 gap-y-1 mt-1 text-xs">
+                <span class="text-emerald-700 font-black">${formatComma(product.price)} تومان</span>
+                <span class="${
+                  isOut
+                    ? 'text-rose-600 font-bold'
+                    : isLow
+                    ? 'text-amber-700 font-bold'
+                    : 'text-slate-500 font-medium'
+                }">
+                  ${
+                    isOut
+                      ? '❌ تمام شد'
+                      : isLow
+                      ? `⚠️ فقط ${product.qty} عدد`
+                      : `موجودی: ${product.qty} عدد`
+                  }
+                </span>
+              </div>
+              ${getSizesBadgesHtml(product)}
+            </div>
+            <button
+              type="button"
+              data-action="open-sale-modal"
+              data-id="${product.id}"
+              ${isOut ? 'disabled' : ''}
+              class="tap-btn px-4 py-3.5 rounded-2xl text-xs font-black shadow-xs shrink-0 ${
+                isOut
+                  ? 'bg-slate-200 text-slate-400 cursor-not-allowed'
+                  : 'bg-emerald-600 hover:bg-emerald-700 text-white'
+              }"
+            >
+              🛒 ثبت فروش
+            </button>
+          `;
+          salesListEl.appendChild(row);
+        });
+      }
+
+      const expEl = document.getElementById('dailyExpensesList');
+      expEl.innerHTML = '';
+      dayExpenses.forEach((ex) => {
+        const div = document.createElement('div');
+        div.className = 'flex items-center justify-between bg-rose-50/60 border border-rose-100 rounded-xl px-3 py-2 text-xs';
+        div.innerHTML = `
+          <span class="text-slate-700 font-medium">💸 ${escapeHtml(ex.title)}: <strong class="text-rose-700 font-black">${formatComma(ex.amount)} تومان</strong></span>
+          <button type="button" data-del-expense="${ex.id}" class="text-rose-600 font-bold px-2">حذف ✕</button>
+        `;
+        expEl.appendChild(div);
+      });
+
+      renderSalesLogItems(document.getElementById('dailySalesLogList'), daySales);
+    }
+
+    function renderSalesLogItems(containerEl, salesArray) {
+      containerEl.innerHTML = '';
+      if (salesArray.length === 0) {
+        containerEl.innerHTML = `
+          <div class="text-center py-8 text-slate-400 text-xs">
+            در تاریخ ${formatJalaliHuman(selectedDateKey)} هنوز فروشی ثبت نشده است.
+          </div>
+        `;
+        return;
+      }
+
+      salesArray.forEach((sale) => {
+        const totalSold = sale.soldUnitPrice * sale.qty;
+        const discount = Math.max(0, (sale.baseUnitPrice - sale.soldUnitPrice) * sale.qty);
+        const item = document.createElement('div');
+        item.className = 'p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80 flex items-center justify-between gap-2.5 text-xs';
+        item.innerHTML = `
+          <div class="min-w-0 flex-1 space-y-1.5">
+            <div class="flex items-center gap-1.5 flex-wrap">
+              <span class="font-black text-slate-900 text-sm">${escapeHtml(sale.productName)}</span>
+              ${sale.sizeLabel ? `<span class="bg-violet-100 text-violet-800 px-2 py-0.5 rounded-lg text-[10px] font-black">سایز ${escapeHtml(sale.sizeLabel)}</span>` : ''}
+              <span class="bg-indigo-100 text-indigo-800 px-2 py-0.5 rounded-lg text-[10px] font-bold">${sale.qty} عدد</span>
+              <span class="text-[11px] font-mono text-slate-500">⏰ ${escapeHtml(sale.time)}</span>
+            </div>
+            <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs">
+              <span class="text-emerald-700 font-black">دریافتی: ${formatComma(totalSold)} تومان</span>
+              ${
+                discount > 0
+                  ? `<span class="bg-amber-100 text-amber-800 px-2 py-0.5 rounded-lg text-[10px] font-bold">تخفیف: ${formatComma(discount)} ت</span>`
+                  : ''
+              }
+              <span class="text-slate-500">${escapeHtml(sale.paymentMethod)}</span>
+            </div>
+            ${sale.note ? `<p class="text-[11px] text-slate-500">📝 ${escapeHtml(sale.note)}</p>` : ''}
+          </div>
+          <button
+            type="button"
+            data-action="refund-sale"
+            data-sale-id="${sale.id}"
+            title="مرجوع کردن و بازگشت به انبار"
+            class="tap-btn px-3 py-2 rounded-xl bg-rose-50 hover:bg-rose-100 text-rose-600 border border-rose-200 text-xs font-bold shrink-0"
+          >
+            ↩️ مرجوع
+          </button>
+        `;
+        containerEl.appendChild(item);
+      });
+    }
+
+    function renderInventoryPage() {
+      const totalValue = appState.products.reduce((sum, p) => sum + p.price * p.qty, 0);
+      document.getElementById('totalInventoryValue').textContent = formatComma(totalValue);
+
+      const lowStockItems = appState.products.filter((p) => p.qty <= 2);
+      const alertEl = document.getElementById('lowStockAlertText');
+      if (lowStockItems.length > 0) {
+        alertEl.textContent = `⚠️ هشدار موجودی: ${lowStockItems.length} مدل لباس کمتر از ۳ عدد موجودی دارند.`;
+      } else {
+        alertEl.textContent = '✅ موجودی تمام کالاهای انبار کافی است.';
+      }
+
+      const hideProfit = Boolean(appState.privacyHideProfit);
+      const listEl = document.getElementById('productList');
+      listEl.innerHTML = '';
+
+      if (appState.products.length === 0) {
+        listEl.innerHTML = `
+          <div class="text-center py-8 text-slate-400 text-xs">
+            انبار خالی است. از تب «➕ افزودن کالا» اولین لباس را وارد کنید.
+          </div>
+        `;
+        return;
+      }
+
+      appState.products.forEach((product) => {
+        const profitPerUnit = product.price - (product.buyPrice || 0);
+        const card = document.createElement('div');
+        card.className = 'p-3.5 rounded-2xl bg-slate-50/80 border border-slate-200/90 space-y-3';
+        card.innerHTML = `
+          <div class="flex items-start justify-between gap-3">
+            ${getProductThumbHtml(product)}
+            <div class="min-w-0 flex-1">
+              <div class="flex items-center gap-1.5 flex-wrap">
+                ${product.sku ? `<span class="text-[10px] bg-slate-800 text-white px-2 py-0.5 rounded-md font-bold">#${escapeHtml(product.sku)}</span>` : ''}
+                <span class="text-[10px] bg-slate-200 text-slate-700 px-2 py-0.5 rounded-md font-bold">${escapeHtml(product.category || 'لباس')}</span>
+                <span class="text-[11px] text-indigo-700 font-black">کل موجودی: ${product.qty} عدد</span>
+              </div>
+              <p class="text-sm font-black text-slate-900 truncate mt-1">${escapeHtml(product.name)}</p>
+              <div class="flex flex-wrap items-center gap-x-3 gap-y-1 mt-1 text-xs text-slate-600">
+                <span>فروش: <strong class="text-slate-900 font-black">${formatComma(product.price)}</strong> ت</span>
+                <span>خرید: <strong>${hideProfit ? '•••' : formatComma(product.buyPrice || 0)}</strong> ت</span>
+                <span class="text-emerald-700 font-bold">سود: ${hideProfit ? '•••' : formatComma(profitPerUnit)} ت</span>
+              </div>
+              ${getSizesBadgesHtml(product)}
+            </div>
+          </div>
+          <div class="grid grid-cols-3 gap-2 pt-2 border-t border-slate-200/60">
+            <button
+              type="button"
+              data-action="edit-product"
+              data-id="${product.id}"
+              class="tap-btn py-2 rounded-xl text-xs font-bold bg-amber-50 hover:bg-amber-100 text-amber-800 border border-amber-200"
+            >
+              ✏️ ویرایش کالا
+            </button>
+            <button
+              type="button"
+              data-action="restock"
+              data-id="${product.id}"
+              class="tap-btn py-2 rounded-xl text-xs font-bold bg-indigo-50 hover:bg-indigo-100 text-indigo-700 border border-indigo-200"
+            >
+              +۱ شارژ موجودی
+            </button>
+            <button
+              type="button"
+              data-action="delete"
+              data-id="${product.id}"
+              class="tap-btn py-2 rounded-xl text-xs font-bold bg-rose-50 hover:bg-rose-100 text-rose-600 border border-rose-200"
+            >
+              🗑️ حذف
+            </button>
+          </div>
+        `;
+        listEl.appendChild(card);
+      });
+    }
+
+    function renderCalendarPage(daySales) {
+      document.getElementById('calendarMonthTitle').textContent =
+        `${JALALI_MONTH_NAMES[calendarViewMonth - 1]} ${calendarViewYear}`;
+      document.getElementById('calendarSelectedDateText').textContent =
+        formatJalaliHuman(selectedDateKey);
+
+      const gridEl = document.getElementById('jalaliCalendarGrid');
+      gridEl.innerHTML = '';
+
+      const daysInMonth = getJalaliMonthLength(calendarViewYear, calendarViewMonth);
+      const [gy, gm, gd] = jalaliToGregorian(calendarViewYear, calendarViewMonth, 1);
+      const firstDateObj = new Date(gy, gm - 1, gd);
+      const startDayOfWeek = (firstDateObj.getDay() + 1) % 7;
+
+      for (let i = 0; i < startDayOfWeek; i++) {
+        const emptyCell = document.createElement('div');
+        emptyCell.className = 'h-12 rounded-2xl bg-slate-50/50';
+        gridEl.appendChild(emptyCell);
+      }
+
+      let monthTotalRevenue = 0;
+      const monthPrefix = `${calendarViewYear}/${pad2(calendarViewMonth)}/`;
+      appState.sales.forEach((s) => {
+        if (s.dateKey.startsWith(monthPrefix)) {
+          monthTotalRevenue += s.soldUnitPrice * s.qty;
+        }
+      });
+      document.getElementById('monthTotalSales').textContent = formatComma(monthTotalRevenue);
+
+      for (let day = 1; day <= daysInMonth; day++) {
+        const dKey = makeJalaliKey(calendarViewYear, calendarViewMonth, day);
+        const dayStats = getStatsForDate(dKey);
+        const isSelected = dKey === selectedDateKey;
+        const isToday = dKey === TODAY_KEY;
+
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.setAttribute('data-cal-date', dKey);
+        btn.className =
+          'tap-btn h-12 rounded-2xl p-1 flex flex-col items-center justify-between border text-xs ' +
+          (isSelected
+            ? 'bg-indigo-600 text-white border-indigo-700 font-black shadow-xs'
+            : dayStats.totalCount > 0
+            ? 'bg-emerald-50 border-emerald-300 text-slate-800 hover:bg-emerald-100 font-bold'
+            : isToday
+            ? 'bg-indigo-50 border-indigo-300 text-indigo-800 font-bold'
+            : 'bg-white border-slate-200 text-slate-700 hover:bg-slate-50');
+
+        const shortAmount =
+          dayStats.totalRevenue > 0
+            ? Math.round(dayStats.totalRevenue / 1000) + 'k'
+            : isToday
+            ? 'امروز'
+            : '';
+
+        btn.innerHTML = `
+          <span>${day}</span>
+          <span class="text-[9px] truncate max-w-full ${
+            isSelected
+              ? 'text-emerald-200'
+              : dayStats.totalRevenue > 0
+              ? 'text-emerald-700 font-bold'
+              : 'text-slate-400'
+          }">${shortAmount}</span>
+        `;
+        gridEl.appendChild(btn);
+      }
+
+      const bestMap = {};
+      appState.sales.forEach((s) => {
+        if (!bestMap[s.productName]) {
+          bestMap[s.productName] = { name: s.productName, qty: 0, rev: 0 };
+        }
+        bestMap[s.productName].qty += s.qty;
+        bestMap[s.productName].rev += s.soldUnitPrice * s.qty;
+      });
+      const sortedBest = Object.values(bestMap).sort((a, b) => b.qty - a.qty).slice(0, 6);
+      const bestEl = document.getElementById('bestSellersList');
+      bestEl.innerHTML = '';
+      if (sortedBest.length === 0) {
+        bestEl.innerHTML = '<p class="text-xs text-slate-400 py-6 text-center">هنوز فروشی برای رتبه‌بندی ثبت نشده است.</p>';
+      } else {
+        sortedBest.forEach((item, idx) => {
+          const row = document.createElement('div');
+          row.className = 'flex items-center justify-between bg-slate-50 border border-slate-200 rounded-2xl px-4 py-3 text-xs';
+          row.innerHTML = `
+            <span class="font-black text-slate-800">${idx + 1}. ${escapeHtml(item.name)}</span>
+            <span class="text-indigo-700 font-black">${item.qty} عدد (${formatComma(item.rev)} ت)</span>
+          `;
+          bestEl.appendChild(row);
+        });
+      }
+
+      renderSalesLogItems(document.getElementById('calendarDaySalesList'), daySales);
+    }
+
+    function renderBackupAndSecurityPage() {
+      const badge = document.getElementById('lastBackupBadge');
+      if (appState.lastBackupDate === TODAY_KEY) {
+        badge.textContent = '✅ بکاپ امروز گرفته شد';
+      } else if (appState.lastBackupDate) {
+        badge.textContent = `آخرین بکاپ: ${appState.lastBackupDate}`;
+      } else {
+        badge.textContent = '⚠️ هنوز بکاپ نگرفته‌اید';
+      }
+
+      const pinStatus = document.getElementById('pinStatusText');
+      if (appState.pinCode) {
+        pinStatus.textContent = '🔒 رمز عبور ۴ رقمی فعال است (حذف، ریست و مشاهده سود قفل است).';
+      } else {
+        pinStatus.textContent = '🔓 رمز عبور غیرفعال است.';
+      }
+    }
+
+    // =========================================================
+    // ۱۰. پنجره ثبت فروش با انتخاب سایز
+    // =========================================================
+    function openSaleModal(product) {
+      modalActiveProduct = product;
+      document.getElementById('modalProductName').textContent = `ثبت فروش: ${product.name}`;
+      document.getElementById('modalBasePrice').textContent = formatComma(product.price);
+      document.getElementById('modalStockLeft').textContent = product.qty;
+      document.getElementById('modalConfirmDateText').textContent = formatJalaliHuman(selectedDateKey);
+
+      const sizeBox = document.getElementById('modalSizeSelector');
+      sizeBox.innerHTML = '';
+      modalSelectedSize = '';
+
+      if (Array.isArray(product.sizes) && product.sizes.length > 0) {
+        const firstAvailable = product.sizes.find((s) => s.qty > 0) || product.sizes[0];
+        modalSelectedSize = firstAvailable ? firstAvailable.label : '';
+        product.sizes.forEach((s) => {
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.setAttribute('data-modal-size', s.label);
+          const isOut = (Number(s.qty) || 0) <= 0;
+          btn.disabled = isOut;
+          btn.className = getModalSizeBtnClass(s.label === modalSelectedSize, isOut);
+          btn.textContent = `سایز ${s.label} (${s.qty} عدد)`;
+          sizeBox.appendChild(btn);
+        });
+      } else {
+        modalSelectedSize = 'تک‌سایز';
+        sizeBox.innerHTML = '<span class="text-xs text-slate-500">تک‌سایز (Free Size)</span>';
+      }
+
+      const qtyInput = document.getElementById('saleQtyInput');
+      qtyInput.value = '1';
+      qtyInput.max = String(product.qty);
+
+      const unitPriceInput = document.getElementById('saleFinalUnitPrice');
+      unitPriceInput.value = formatComma(product.price);
+
+      document.getElementById('saleNoteInput').value = '';
+      updateModalLiveSummary();
+
+      document.getElementById('saleModalBackdrop').classList.remove('hidden');
+    }
+
+    function getModalSizeBtnClass(isSelected, isOut) {
+      if (isOut) {
+        return 'px-3 py-2 rounded-2xl text-xs bg-slate-100 text-slate-400 border border-slate-200 cursor-not-allowed line-through';
+      }
+      return isSelected
+        ? 'tap-btn px-3.5 py-2 rounded-2xl text-xs font-black bg-indigo-600 text-white border border-indigo-700 shadow-xs'
+        : 'tap-btn px-3.5 py-2 rounded-2xl text-xs font-bold bg-slate-100 text-slate-700 border border-slate-300 hover:bg-indigo-50';
+    }
+
+    function closeSaleModal() {
+      modalActiveProduct = null;
+      document.getElementById('saleModalBackdrop').classList.add('hidden');
+    }
+
+    function updateModalLiveSummary() {
+      if (!modalActiveProduct) return;
+      const qty = Math.max(1, parseInt(document.getElementById('saleQtyInput').value, 10) || 1);
+      const soldUnit = parseCommaNumber(document.getElementById('saleFinalUnitPrice').value);
+      const baseUnit = modalActiveProduct.price;
+      const buyUnit = modalActiveProduct.buyPrice || 0;
+
+      const totalPayable = soldUnit * qty;
+      const totalDiscount = Math.max(0, (baseUnit - soldUnit) * qty);
+      const totalProfit = (soldUnit - buyUnit) * qty;
+
+      document.getElementById('modalTotalPayable').textContent = formatComma(totalPayable);
+      document.getElementById('modalEstimatedProfit').textContent = appState.privacyHideProfit
+        ? '•••'
+        : formatComma(totalProfit);
+
+      const badge = document.getElementById('discountLiveBadge');
+      if (totalDiscount > 0) {
+        const pct = Math.round(((baseUnit - soldUnit) / baseUnit) * 100);
+        badge.textContent = `${formatComma(totalDiscount)} ت تخفیف (${pct}٪)`;
+        badge.className = 'text-[11px] font-bold text-amber-800 bg-amber-100 px-2.5 py-0.5 rounded-lg';
+      } else {
+        badge.textContent = 'بدون تخفیف';
+        badge.className = 'text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-lg';
+      }
+    }
+
+    bindCommaInput(document.getElementById('productBuyPrice'));
+    bindCommaInput(document.getElementById('productPrice'));
+    bindCommaInput(document.getElementById('expenseAmountInput'));
+    bindCommaInput(document.getElementById('saleFinalUnitPrice'), updateModalLiveSummary);
+
+    document.getElementById('saleQtyInput').addEventListener('input', updateModalLiveSummary);
+    document.getElementById('closeSaleModalBtn').addEventListener('click', closeSaleModal);
+
+    document.getElementById('modalSizeSelector').addEventListener('click', function (e) {
+      const btn = e.target.closest('button[data-modal-size]');
+      if (!btn || !modalActiveProduct) return;
+      modalSelectedSize = btn.getAttribute('data-modal-size');
+      this.querySelectorAll('button[data-modal-size]').forEach((b) => {
+        const label = b.getAttribute('data-modal-size');
+        const szObj = modalActiveProduct.sizes.find((x) => x.label === label);
+        const isOut = !szObj || szObj.qty <= 0;
+        b.className = getModalSizeBtnClass(label === modalSelectedSize, isOut);
+      });
+    });
+
+    document.getElementById('confirmSaleForm').addEventListener('click', function (e) {
+      const discBtn = e.target.closest('button[data-disc]');
+      if (!discBtn || !modalActiveProduct) return;
+
+      const mode = discBtn.getAttribute('data-disc');
+      const base = modalActiveProduct.price;
+      let newPrice = base;
+
+      if (mode === 'p5') newPrice = Math.round((base * 0.95) / 1000) * 1000;
+      else if (mode === 'p10') newPrice = Math.round((base * 0.9) / 1000) * 1000;
+      else if (mode === 'm50') newPrice = Math.max(0, base - 50000);
+      else if (mode === 'm100') newPrice = Math.max(0, base - 100000);
+
+      document.getElementById('saleFinalUnitPrice').value = formatComma(newPrice);
+      updateModalLiveSummary();
+    });
+
+    document.getElementById('confirmSaleForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (!modalActiveProduct) return;
+
+      const qty = parseInt(document.getElementById('saleQtyInput').value, 10) || 1;
+      const soldUnitPrice = parseCommaNumber(document.getElementById('saleFinalUnitPrice').value);
+      const paymentMethod = document.getElementById('salePaymentMethod').value;
+      const note = document.getElementById('saleNoteInput').value.trim();
+
+      if (qty <= 0 || qty > modalActiveProduct.qty) {
+        showMessage('تعداد واردشده بیشتر از موجودی انبار است!', 'warning');
+        return;
+      }
+      if (soldUnitPrice <= 0) {
+        showMessage('لطفاً قیمت فروش معتبر وارد کنید.', 'warning');
+        return;
+      }
+
+      if (Array.isArray(modalActiveProduct.sizes) && modalActiveProduct.sizes.length > 0 && modalSelectedSize) {
+        const targetSize = modalActiveProduct.sizes.find((s) => s.label === modalSelectedSize);
+        if (targetSize) {
+          if (qty > targetSize.qty) {
+            showMessage(`موجودی سایز ${modalSelectedSize} فقط ${targetSize.qty} عدد است!`, 'warning');
+            return;
+          }
+          targetSize.qty -= qty;
+        }
+      }
+
+      modalActiveProduct.qty -= qty;
+
+      const nowTime = getAccurateNow();
+      const timeStr = `${pad2(nowTime.getHours())}:${pad2(nowTime.getMinutes())}:${pad2(nowTime.getSeconds())}`;
+
+      appState.sales.unshift({
+        id: 'sale_' + Date.now(),
+        dateKey: selectedDateKey,
+        time: timeStr,
+        productId: modalActiveProduct.id,
+        productName: modalActiveProduct.name,
+        sizeLabel: modalSelectedSize,
+        qty: qty,
+        baseUnitPrice: modalActiveProduct.price,
+        soldUnitPrice: soldUnitPrice,
+        buyUnitPrice: modalActiveProduct.buyPrice || 0,
+        paymentMethod: paymentMethod,
+        note: note
+      });
+
+      const prodName = modalActiveProduct.name;
+      const szText = modalSelectedSize ? ` (سایز ${modalSelectedSize})` : '';
+      closeSaleModal();
+      saveState();
+      renderAll();
+      showMessage(`فروش ${qty} عدد «${prodName}»${szText} در ساعت ${timeStr} ثبت شد.`);
+    });
+
+    // =========================================================
+    // ۱۱. رویدادهای فرم افزودن محصول، عکس، سایز و دسته
+    // =========================================================
+    document.getElementById('productImageInput').addEventListener('change', function (e) {
+      const file = e.target.files && e.target.files[0];
+      if (!file) return;
+      compressImageFile(file, function (compressedDataUrl) {
+        currentFormImageData = compressedDataUrl;
+        renderFormPhotoPreview();
+        showMessage('عکس لباس آماده ثبت شد.');
+      });
+    });
+
+    document.getElementById('clearProductImageBtn').addEventListener('click', function () {
+      currentFormImageData = '';
+      document.getElementById('productImageInput').value = '';
+      renderFormPhotoPreview();
+    });
+
+    document.getElementById('presetIconBar').addEventListener('click', function (e) {
+      const btn = e.target.closest('button[data-icon]');
+      if (!btn) return;
+      currentFormIcon = btn.getAttribute('data-icon');
+      currentFormImageData = '';
+      renderFormPhotoPreview();
+    });
+
+    document.getElementById('sizePresetButtons').addEventListener('click', function (e) {
+      const btn = e.target.closest('button[data-size-preset]');
+      if (!btn) return;
+      const preset = btn.getAttribute('data-size-preset');
+      if (preset === 'alpha') {
+        currentFormSizes = [
+          { label: 'M', qty: 2 },
+          { label: 'L', qty: 3 },
+          { label: 'XL', qty: 2 },
+          { label: '2XL', qty: 1 }
+        ];
+      } else if (preset === 'numeric') {
+        currentFormSizes = [
+          { label: '38', qty: 2 },
+          { label: '40', qty: 2 },
+          { label: '42', qty: 2 },
+          { label: '44', qty: 1 }
+        ];
+      } else if (preset === 'shoes') {
+        currentFormSizes = [
+          { label: '40', qty: 1 },
+          { label: '41', qty: 2 },
+          { label: '42', qty: 2 },
+          { label: '43', qty: 1 }
+        ];
+      } else if (preset === 'free') {
+        currentFormSizes = [{ label: 'Free', qty: 5 }];
+      }
+      renderSizeBuilder();
+    });
+
+    document.getElementById('sizeBuilderRows').addEventListener('input', function (e) {
+      const idx = e.target.getAttribute('data-size-idx');
+      const field = e.target.getAttribute('data-field');
+      if (idx === null || !field) return;
+      const item = currentFormSizes[Number(idx)];
+      if (!item) return;
+
+      if (field === 'label') {
+        item.label = e.target.value.trim();
+      } else if (field === 'qty') {
+        item.qty = Math.max(0, parseInt(e.target.value, 10) || 0);
+        const sum = currentFormSizes.reduce((s, x) => s + (Number(x.qty) || 0), 0);
+        document.getElementById('sizeSumBadge').textContent = sum;
+        document.getElementById('productQty').value = sum;
+      }
+    });
+
+    document.getElementById('sizeBuilderRows').addEventListener('click', function (e) {
+      const btn = e.target.closest('button[data-remove-size]');
+      if (!btn) return;
+      const idx = Number(btn.getAttribute('data-remove-size'));
+      currentFormSizes.splice(idx, 1);
+      renderSizeBuilder();
+    });
+
+    document.getElementById('addCustomSizeRowBtn').addEventListener('click', function () {
+      const inp = document.getElementById('customSizeLabelInput');
+      const label = inp.value.trim() || 'سایز جدید';
+      currentFormSizes.push({ label, qty: 1 });
+      inp.value = '';
+      renderSizeBuilder();
+    });
+
+    document.getElementById('toggleCategoryManagerBtn').addEventListener('click', function () {
+      document.getElementById('categoryManagerPanel').classList.toggle('hidden');
+    });
+
+    document.getElementById('addCategoryBtn').addEventListener('click', function () {
+      const inp = document.getElementById('newCategoryNameInput');
+      const name = inp.value.trim();
+      if (!name) return;
+      if (!appState.categories.includes(name)) {
+        appState.categories.push(name);
+        saveState();
+        renderAll();
+        document.getElementById('productCategory').value = name;
+        showMessage(`دسته‌بندی «${name}» اضافه شد.`);
+      }
+      inp.value = '';
+    });
+
+    document.getElementById('editableCategoryList').addEventListener('click', function (e) {
+      const saveBtn = e.target.closest('button[data-save-cat-idx]');
+      const delBtn = e.target.closest('button[data-del-cat-idx]');
+
+      if (saveBtn) {
+        const idx = Number(saveBtn.getAttribute('data-save-cat-idx'));
+        const inputEl = this.querySelector(`input[data-edit-cat-idx="${idx}"]`);
+        const newName = inputEl ? inputEl.value.trim() : '';
+        const oldName = appState.categories[idx];
+        if (newName && oldName && newName !== oldName) {
+          appState.categories[idx] = newName;
+          appState.products.forEach((p) => {
+            if (p.category === oldName) p.category = newName;
+          });
+          saveState();
+          renderAll();
+          showMessage(`نام دسته «${oldName}» به «${newName}» تغییر یافت.`);
+        }
+      } else if (delBtn) {
+        const idx = Number(delBtn.getAttribute('data-del-cat-idx'));
+        if (appState.categories.length <= 1) {
+          showMessage('حداقل یک دسته‌بندی باید باقی بماند.', 'warning');
+          return;
+        }
+        const removed = appState.categories.splice(idx, 1)[0];
+        saveState();
+        renderAll();
+        showMessage(`دسته‌بندی «${removed}» حذف شد.`, 'warning');
+      }
+    });
+
+    document.getElementById('addProductForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const editId = document.getElementById('editingProductId').value;
+      const name = document.getElementById('productName').value.trim();
+      const skuInput = document.getElementById('productSkuInput').value.trim();
+      const category = document.getElementById('productCategory').value;
+      const buyPrice = parseCommaNumber(document.getElementById('productBuyPrice').value);
+      const price = parseCommaNumber(document.getElementById('productPrice').value);
+      const cleanedSizes = currentFormSizes
+        .filter((s) => s.label && s.label.trim() !== '')
+        .map((s) => ({ label: s.label.trim(), qty: Math.max(0, Number(s.qty) || 0) }));
+
+      const sizeSum = cleanedSizes.reduce((acc, s) => acc + s.qty, 0);
+      const manualQty = parseInt(document.getElementById('productQty').value, 10) || 0;
+      const finalQty = cleanedSizes.length > 0 ? sizeSum : manualQty;
+
+      if (!name || price <= 0) {
+        showMessage('لطفاً نام لباس و قیمت فروش را وارد کنید.', 'warning');
+        return;
+      }
+
+      if (editId) {
+        const existing = appState.products.find((p) => p.id === editId);
+        if (existing) {
+          existing.name = name;
+          existing.sku = skuInput || existing.sku || String(100 + appState.products.length);
+          existing.category = category;
+          existing.buyPrice = buyPrice || Math.round(price * 0.7);
+          existing.price = price;
+          existing.qty = finalQty;
+          existing.sizes = cleanedSizes;
+          existing.icon = currentFormIcon;
+          existing.image = currentFormImageData;
+          showMessage(`اطلاعات «${name}» بروزرسانی شد.`);
+        }
+      } else {
+        const nextSku = skuInput || String(101 + appState.products.length);
+        appState.products.unshift({
+          id: 'p_' + Date.now(),
+          sku: nextSku,
+          name,
+          category,
+          icon: currentFormIcon,
+          image: currentFormImageData,
+          buyPrice: buyPrice || Math.round(price * 0.7),
+          price,
+          qty: finalQty,
+          sizes: cleanedSizes
+        });
+        showMessage(`«${name}» با کد #${nextSku} در انبار ثبت شد.`);
+      }
+
+      resetProductForm();
+      saveState();
+      renderAll();
+      switchTab('inventory');
+    });
+
+    function resetProductForm() {
+      document.getElementById('editingProductId').value = '';
+      document.getElementById('productName').value = '';
+      document.getElementById('productSkuInput').value = '';
+      document.getElementById('productBuyPrice').value = '';
+      document.getElementById('productPrice').value = '';
+      document.getElementById('productImageInput').value = '';
+      currentFormImageData = '';
+      currentFormIcon = '🧥';
+      currentFormSizes = [
+        { label: 'M', qty: 1 },
+        { label: 'L', qty: 2 },
+        { label: 'XL', qty: 1 }
+      ];
+      document.getElementById('inventoryFormHeading').innerHTML = '<span>➕</span><span>تعریف لباس جدید برای مغازه</span>';
+      document.getElementById('submitProductFormBtn').textContent = 'ثبت کالا در انبار';
+      document.getElementById('cancelEditProductBtn').classList.add('hidden');
+      renderFormPhotoPreview();
+      renderSizeBuilder();
+    }
+
+    document.getElementById('cancelEditProductBtn').addEventListener('click', function () {
+      resetProductForm();
+      switchTab('inventory');
+    });
+
+    document.getElementById('jumpToAddProductBtn').addEventListener('click', function () {
+      resetProductForm();
+      switchTab('add');
+    });
+
+    document.getElementById('toggleBulkPriceAccordionBtn').addEventListener('click', function () {
+      const body = document.getElementById('bulkPriceCollapsibleBody');
+      const isHidden = body.classList.toggle('hidden');
+      document.getElementById('bulkAccordionArrow').textContent = isHidden ? '▼' : '▲';
+    });
+
+    document.getElementById('productList').addEventListener('click', function (e) {
+      const btn = e.target.closest('button[data-action]');
+      if (!btn) return;
+      const action = btn.getAttribute('data-action');
+      const id = btn.getAttribute('data-id');
+      const product = appState.products.find((p) => p.id === id);
+      if (!product) return;
+
+      if (action === 'edit-product') {
+        requirePinAuth('برای ویرایش کالا رمز ۴ رقمی را وارد کنید:', function () {
+          document.getElementById('editingProductId').value = product.id;
+          document.getElementById('productName').value = product.name;
+          document.getElementById('productSkuInput').value = product.sku || '';
+          document.getElementById('productCategory').value = product.category;
+          document.getElementById('productBuyPrice').value = formatComma(product.buyPrice || 0);
+          document.getElementById('productPrice').value = formatComma(product.price);
+          currentFormIcon = product.icon || '🧥';
+          currentFormImageData = product.image || '';
+          currentFormSizes = Array.isArray(product.sizes) && product.sizes.length > 0
+            ? JSON.parse(JSON.stringify(product.sizes))
+            : [{ label: 'Free', qty: product.qty }];
+          document.getElementById('inventoryFormHeading').innerHTML = `<span>✏️</span><span>ویرایش: ${escapeHtml(product.name)}</span>`;
+          document.getElementById('submitProductFormBtn').textContent = 'ذخیره تغییرات کالا';
+          document.getElementById('cancelEditProductBtn').classList.remove('hidden');
+          renderFormPhotoPreview();
+          renderSizeBuilder();
+          switchTab('add');
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      } else if (action === 'restock') {
+        product.qty += 1;
+        if (Array.isArray(product.sizes) && product.sizes.length > 0) {
+          product.sizes[0].qty = (Number(product.sizes[0].qty) || 0) + 1;
+        }
+        saveState();
+        renderAll();
+        showMessage(`۱ عدد به موجودی «${product.name}» اضافه شد.`);
+      } else if (action === 'delete') {
+        requirePinAuth('برای حذف کالا از انبار رمز را وارد کنید:', function () {
+          appState.products = appState.products.filter((p) => p.id !== id);
+          saveState();
+          renderAll();
+          showMessage(`«${product.name}» از انبار حذف شد.`, 'warning');
+        });
+      }
+    });
+
+    document.getElementById('applyBulkPriceBtn').addEventListener('click', function () {
+      const cat = document.getElementById('bulkPriceCategorySelect').value;
+      const pct = parseFloat(document.getElementById('bulkPricePercentInput').value);
+      if (isNaN(pct) || pct === 0) {
+        showMessage('لطفاً درصد تغییر قیمت (مثلاً 10 یا -15) را وارد کنید.', 'warning');
+        return;
+      }
+      requirePinAuth('برای تغییر گروهی قیمت‌ها رمز را وارد کنید:', function () {
+        let count = 0;
+        appState.products.forEach((p) => {
+          if (cat === 'all' || p.category === cat) {
+            const updated = Math.round((p.price * (1 + pct / 100)) / 1000) * 1000;
+            p.price = Math.max(1000, updated);
+            count++;
+          }
+        });
+        document.getElementById('bulkPricePercentInput').value = '';
+        saveState();
+        renderAll();
+        showMessage(`قیمت ${count} مدل کالا به میزان ${pct}٪ بروزرسانی شد.`);
+      });
+    });
+
+    // =========================================================
+    // ۱۲. ثبت هزینه‌ها و مرجوعی
+    // =========================================================
+    document.getElementById('addExpenseForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const titleInp = document.getElementById('expenseTitleInput');
+      const amtInp = document.getElementById('expenseAmountInput');
+      const title = titleInp.value.trim();
+      const amount = parseCommaNumber(amtInp.value);
+      if (!title || amount <= 0) return;
+
+      appState.expenses.unshift({
+        id: 'exp_' + Date.now(),
+        dateKey: selectedDateKey,
+        title,
+        amount
+      });
+      titleInp.value = '';
+      amtInp.value = '';
+      saveState();
+      renderAll();
+      showMessage(`هزینه «${title}» ثبت شد.`);
+    });
+
+    document.getElementById('dailyExpensesList').addEventListener('click', function (e) {
+      const btn = e.target.closest('button[data-del-expense]');
+      if (!btn) return;
+      const id = btn.getAttribute('data-del-expense');
+      appState.expenses = appState.expenses.filter((x) => x.id !== id);
+      saveState();
+      renderAll();
+    });
+
+    function handleRefundClick(e) {
+      const btn = e.target.closest('button[data-action="refund-sale"]');
+      if (!btn) return;
+      const saleId = btn.getAttribute('data-sale-id');
+      const saleIndex = appState.sales.findIndex((s) => s.id === saleId);
+      if (saleIndex === -1) return;
+
+      const sale = appState.sales[saleIndex];
+      const product = appState.products.find((p) => p.id === sale.productId);
+      if (product) {
+        product.qty += sale.qty;
+        if (sale.sizeLabel && Array.isArray(product.sizes)) {
+          const sz = product.sizes.find((x) => x.label === sale.sizeLabel);
+          if (sz) sz.qty += sale.qty;
+        }
+      }
+      appState.sales.splice(saleIndex, 1);
+      saveState();
+      renderAll();
+      showMessage(`فروش «${sale.productName}» مرجوع شد و به انبار برگشت.`, 'warning');
+    }
+
+    document.getElementById('dailySalesLogList').addEventListener('click', handleRefundClick);
+    document.getElementById('calendarDaySalesList').addEventListener('click', handleRefundClick);
+
+    // =========================================================
+    // ۱۳. امنیت، قفل فوری و پشتیبان‌گیری با امضای سلامت
+    // =========================================================
+    document.getElementById('togglePrivacyBtn').addEventListener('click', function () {
+      if (appState.privacyHideProfit && appState.pinCode) {
+        requirePinAuth('برای نمایش سود خالص رمز ۴ رقمی را وارد کنید:', function () {
+          appState.privacyHideProfit = false;
+          saveState();
+          renderAll();
+          showMessage('قفل باز شد؛ سود خالص قابل مشاهده است.');
+        });
+        return;
+      }
+      appState.privacyHideProfit = !appState.privacyHideProfit;
+      saveState();
+      renderAll();
+    });
+
+    document.getElementById('lockAppNowBtn').addEventListener('click', function () {
+      appState.privacyHideProfit = true;
+      saveState();
+      renderAll();
+      if (appState.pinCode) {
+        requirePinAuth('صفحه قفل شد. برای باز کردن، رمز ۴ رقمی را وارد کنید:', function () {
+          showMessage('خوش آمدید! قفل صفحه باز شد.');
+        });
+      } else {
+        showMessage('سودها مخفی شدند (برای قفل کامل، یک رمز ۴ رقمی ذخیره کنید).', 'warning');
+      }
+    });
+
+    document.getElementById('unlockPinForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (Date.now() < pinLockoutUntil) {
+        const waitSec = Math.ceil((pinLockoutUntil - Date.now()) / 1000);
+        showMessage(`قفل امنیتی فعال است. ${waitSec} ثانیه دیگر امتحان کنید.`, 'warning');
+        return;
+      }
+
+      const entered = document.getElementById('unlockPinInput').value.trim();
+      if (entered === appState.pinCode) {
+        failedPinAttempts = 0;
+        document.getElementById('pinUnlockModal').classList.add('hidden');
+        if (pendingPinCallback) {
+          const cb = pendingPinCallback;
+          pendingPinCallback = null;
+          cb();
+        } else {
+          appState.privacyHideProfit = false;
+          saveState();
+          renderAll();
+        }
+      } else {
+        failedPinAttempts += 1;
+        if (failedPinAttempts >= 3) {
+          pinLockoutUntil = Date.now() + 30000;
+          failedPinAttempts = 0;
+          document.getElementById('pinUnlockModal').classList.add('hidden');
+          showMessage('۳ بار رمز اشتباه وارد شد! قفل امنیتی ۳۰ ثانیه‌ای فعال گردید.', 'warning');
+        } else {
+          showMessage('رمز اشتباه است!', 'warning');
+        }
+      }
+    });
+
+    document.getElementById('cancelPinModalBtn').addEventListener('click', function () {
+      pendingPinCallback = null;
+      document.getElementById('pinUnlockModal').classList.add('hidden');
+    });
+
+    document.getElementById('pinSettingsForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const pin = document.getElementById('shopPinInput').value.trim();
+      if (pin.length !== 4 || !/^\d{4}$/.test(pin)) {
+        showMessage('لطفاً یک رمز عددی دقیقاً ۴ رقمی وارد کنید.', 'warning');
+        return;
+      }
+      appState.pinCode = pin;
+      appState.privacyHideProfit = true;
+      document.getElementById('shopPinInput').value = '';
+      saveState();
+      renderAll();
+      showMessage('رمز امنیتی ۴ رقمی فعال شد.');
+    });
+
+    document.getElementById('removePinBtn').addEventListener('click', function () {
+      requirePinAuth('برای حذف رمز امنیتی، رمز فعلی را وارد کنید:', function () {
+        appState.pinCode = '';
+        appState.privacyHideProfit = false;
+        saveState();
+        renderAll();
+        showMessage('رمز عبور حذف شد.', 'warning');
+      });
+    });
+
+    document.getElementById('downloadJsonBackupBtn').addEventListener('click', function () {
+      appState.lastBackupDate = TODAY_KEY;
+      saveState();
+      const payload = {
+        ...appState,
+        backupExportedAt: getAccurateNow().toISOString(),
+        integrityHash: computeChecksum(JSON.stringify(appState.products) + JSON.stringify(appState.sales))
+      };
+      const dataStr = JSON.stringify(payload, null, 2);
+      const blob = new Blob([dataStr], { type: 'application/json;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `boutique-backup-${TODAY_KEY.replace(/\//g, '-')}.json`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      renderAll();
+      showMessage('فایل پشتیبان کامل امروز با کد سلامت دانلود شد.');
+    });
+
+    document.getElementById('downloadCsvExportBtn').addEventListener('click', function () {
+      let csv = '\uFEFFتاریخ شمسی,ساعت دقیق,نام محصول,سایز,تعداد,قیمت واحد فروش,تخفیف کل,روش پرداخت,توضیحات\n';
+      appState.sales.forEach((s) => {
+        const disc = Math.max(0, (s.baseUnitPrice - s.soldUnitPrice) * s.qty);
+        csv += `"${s.dateKey}","${s.time}","${s.productName}","${s.sizeLabel || ''}","${s.qty}","${s.soldUnitPrice}","${disc}","${s.paymentMethod}","${s.note || ''}"\n`;
+      });
+      const blob = new Blob([csv], { type: 'text/csv;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `boutique-sales-${TODAY_KEY.replace(/\//g, '-')}.csv`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      showMessage('فایل اکسل فروش‌ها دانلود شد.');
+    });
+
+    document.getElementById('copyDailyReportBtn').addEventListener('click', function () {
+      const st = getStatsForDate(selectedDateKey);
+      const reportLines = [
+        `📊 گزارش حسابداری بوتیک - تاریخ ${formatJalaliHuman(selectedDateKey)}`,
+        `• جمع فروش: ${formatComma(st.totalRevenue)} تومان (${st.totalCount} عدد لباس)`,
+        `• جمع تخفیف‌ها: ${formatComma(st.totalDiscount)} تومان`,
+        `• هزینه‌های روز: ${formatComma(st.totalExpense)} تومان`,
+        `• سود خالص روز: ${formatComma(st.totalProfit)} تومان`,
+        `• موجودی کل انبار: ${appState.products.reduce((a, b) => a + b.qty, 0)} عدد`
+      ].join('\n');
+
+      const tempArea = document.createElement('textarea');
+      tempArea.value = reportLines;
+      document.body.appendChild(tempArea);
+      tempArea.select();
+      try {
+        document.execCommand('copy');
+        showMessage('گزارش متنی امروز در حافظه کپی شد.');
+      } catch (err) {
+        showMessage('کپی انجام شد.');
+      }
+      document.body.removeChild(tempArea);
+    });
+
+    document.getElementById('restoreBackupFileInput').addEventListener('change', function (e) {
+      const file = e.target.files && e.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function (ev) {
+        try {
+          const imported = JSON.parse(ev.target.result);
+          if (imported && Array.isArray(imported.products) && Array.isArray(imported.sales)) {
+            if (imported.integrityHash) {
+              const check = computeChecksum(JSON.stringify(imported.products) + JSON.stringify(imported.sales));
+              if (check !== imported.integrityHash) {
+                showMessage('هشدار: فایل پشتیبان دستکاری شده یا ناقص است!', 'warning');
+                return;
+              }
+            }
+            appState = imported;
+            saveState();
+            renderAll();
+            showMessage('تمام اطلاعات با تایید سلامت امنیتی بازگردانی شد!');
+          } else {
+            showMessage('فایل پشتیبان معتبر نیست.', 'warning');
+          }
+        } catch (err) {
+          showMessage('خطا در خواندن فایل پشتیبان!', 'warning');
+        }
+      };
+      reader.readAsText(file);
+    });
+
+    // =========================================================
+    // ۱۴. ناوبری ۵ تب اصلی و زیرتب‌ها
+    // =========================================================
+    function switchTab(tabName) {
+      activeTab = tabName;
+      document.getElementById('pageSales').classList.toggle('hidden', tabName !== 'sales');
+      document.getElementById('pageAddProduct').classList.toggle('hidden', tabName !== 'add');
+      document.getElementById('pageInventory').classList.toggle('hidden', tabName !== 'inventory');
+      document.getElementById('pageCalendar').classList.toggle('hidden', tabName !== 'calendar');
+      document.getElementById('pageBackup').classList.toggle('hidden', tabName !== 'backup');
+
+      const showTopStats = tabName === 'sales' || tabName === 'calendar';
+      document.getElementById('topStatsCard').classList.toggle('hidden', !showTopStats);
+
+      const tabs = [
+        { id: 'navTabSales', key: 'sales' },
+        { id: 'navTabAddProduct', key: 'add' },
+        { id: 'navTabInventory', key: 'inventory' },
+        { id: 'navTabCalendar', key: 'calendar' },
+        { id: 'navTabBackup', key: 'backup' }
+      ];
+      tabs.forEach((t) => {
+        const el = document.getElementById(t.id);
+        if (t.key === tabName) {
+          el.className = 'tap-btn flex flex-col items-center justify-center py-2 rounded-2xl bg-indigo-600 text-white font-black text-[10px] shadow-xs';
+        } else {
+          el.className = 'tap-btn flex flex-col items-center justify-center py-2 rounded-2xl text-slate-500 hover:bg-slate-100 font-bold text-[10px]';
+        }
+      });
+    }
+
+    function switchSalesSubTab(sub) {
+      salesSubTab = sub;
+      const isPos = sub === 'pos';
+      document.getElementById('salesPosSubView').classList.toggle('hidden', !isPos);
+      document.getElementById('salesInvoicesSubView').classList.toggle('hidden', isPos);
+
+      document.getElementById('subTabPosListBtn').className = isPos
+        ? 'tap-btn py-2.5 px-3 rounded-xl text-xs font-black bg-white text-indigo-700 shadow-2xs flex items-center justify-center gap-1.5'
+        : 'tap-btn py-2.5 px-3 rounded-xl text-xs font-bold text-slate-600 hover:text-slate-900 flex items-center justify-center gap-1.5';
+
+      document.getElementById('subTabDailyLogBtn').className = !isPos
+        ? 'tap-btn py-2.5 px-3 rounded-xl text-xs font-black bg-white text-indigo-700 shadow-2xs flex items-center justify-center gap-1.5'
+        : 'tap-btn py-2.5 px-3 rounded-xl text-xs font-bold text-slate-600 hover:text-slate-900 flex items-center justify-center gap-1.5';
+    }
+
+    document.getElementById('subTabPosListBtn').addEventListener('click', () => switchSalesSubTab('pos'));
+    document.getElementById('subTabDailyLogBtn').addEventListener('click', () => switchSalesSubTab('log'));
+
+    function switchCalendarSubTab(sub) {
+      calendarSubTab = sub;
+      const isGrid = sub === 'grid';
+      document.getElementById('calGridSubView').classList.toggle('hidden', !isGrid);
+      document.getElementById('bestSellersSubView').classList.toggle('hidden', isGrid);
+
+      document.getElementById('subTabCalGridBtn').className = isGrid
+        ? 'tap-btn py-2.5 px-3 rounded-xl text-xs font-black bg-white text-indigo-700 shadow-2xs'
+        : 'tap-btn py-2.5 px-3 rounded-xl text-xs font-bold text-slate-600 hover:text-slate-900';
+
+      document.getElementById('subTabBestSellersBtn').className = !isGrid
+        ? 'tap-btn py-2.5 px-3 rounded-xl text-xs font-black bg-white text-indigo-700 shadow-2xs'
+        : 'tap-btn py-2.5 px-3 rounded-xl text-xs font-bold text-slate-600 hover:text-slate-900';
+    }
+
+    document.getElementById('subTabCalGridBtn').addEventListener('click', () => switchCalendarSubTab('grid'));
+    document.getElementById('subTabBestSellersBtn').addEventListener('click', () => switchCalendarSubTab('best'));
+
+    document.querySelectorAll('button[data-tab]').forEach((btn) => {
+      btn.addEventListener('click', () => switchTab(btn.getAttribute('data-tab')));
+    });
+
+    document.getElementById('salesSearchInput').addEventListener('input', renderAll);
+
+    document.getElementById('categoryFilterBar').addEventListener('click', function (e) {
+      const btn = e.target.closest('button[data-cat]');
+      if (!btn) return;
+      activeCategoryFilter = btn.getAttribute('data-cat');
+      renderAll();
+    });
+
+    document.getElementById('salesProductList').addEventListener('click', function (e) {
+      const btn = e.target.closest('button[data-action="open-sale-modal"]');
+      if (!btn) return;
+      const product = appState.products.find((p) => p.id === btn.getAttribute('data-id'));
+      if (product && product.qty > 0) {
+        openSaleModal(product);
+      }
+    });
+
+    document.getElementById('prevMonthBtn').addEventListener('click', function () {
+      calendarViewMonth -= 1;
+      if (calendarViewMonth < 1) {
+        calendarViewMonth = 12;
+        calendarViewYear -= 1;
+      }
+      renderAll();
+    });
+
+    document.getElementById('nextMonthBtn').addEventListener('click', function () {
+      calendarViewMonth += 1;
+      if (calendarViewMonth > 12) {
+        calendarViewMonth = 1;
+        calendarViewYear += 1;
+      }
+      renderAll();
+    });
+
+    document.getElementById('jalaliCalendarGrid').addEventListener('click', function (e) {
+      const btn = e.target.closest('button[data-cal-date]');
+      if (!btn) return;
+      selectedDateKey = btn.getAttribute('data-cal-date');
+      renderAll();
+    });
+
+    document.getElementById('addSaleForDateBtn').addEventListener('click', function () {
+      switchTab('sales');
+      switchSalesSubTab('pos');
+      showMessage(`لباس مورد نظر را برای ثبت در تاریخ ${formatJalaliHuman(selectedDateKey)} انتخاب کنید.`);
+    });
+
+    document.getElementById('goTodayHeaderBtn').addEventListener('click', function () {
+      selectedDateKey = TODAY_KEY;
+      calendarViewYear = todayJY;
+      calendarViewMonth = todayJM;
+      renderAll();
+      showMessage('تاریخ روی امروز تنظیم شد.');
+    });
+
+    document.getElementById('resetTodayBtn').addEventListener('click', function () {
+      const daySales = appState.sales.filter((s) => s.dateKey === selectedDateKey);
+      if (daySales.length === 0) {
+        showMessage('در این روز فروشی برای پاک کردن وجود ندارد.', 'warning');
+        return;
+      }
+      requirePinAuth('برای صفر کردن فروش‌های این روز رمز ۴ رقمی را وارد کنید:', function () {
+        daySales.forEach((s) => {
+          const prod = appState.products.find((p) => p.id === s.productId);
+          if (prod) {
+            prod.qty += s.qty;
+            if (s.sizeLabel && Array.isArray(prod.sizes)) {
+              const sz = prod.sizes.find((x) => x.label === s.sizeLabel);
+              if (sz) sz.qty += s.qty;
+            }
+          }
+        });
+        appState.sales = appState.sales.filter((s) => s.dateKey !== selectedDateKey);
+        saveState();
+        renderAll();
+        showMessage(`فروش‌های تاریخ ${formatJalaliHuman(selectedDateKey)} پاک شد و موجودی‌ها به انبار برگشت.`, 'warning');
+      });
+    });
+
+    // راه‌اندازی اولیه
+    renderFormPhotoPreview();
+    renderSizeBuilder();
+    renderAll();
+    startLiveClockAndDateGuard();
+  </script>
+</body>
+</html>
